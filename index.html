@@ -3,7 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yash Gupta | Maritime Innovator | AI Explorer | Author | Tech Creator</title>
+    <title>Yash Gupta | Visionary Maritime Innovator, AI Explorer & Author</title>
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Official portfolio of Yash Gupta: Merchant Navy Cadet, Founder of Digital Harbour & Naavik, AI Explorer, Author, and Tech Creator. Leading innovation in maritime digitalization, AI, and sustainable tech solutions.">
+    <meta name="keywords" content="Yash Gupta, Maritime Innovator, AI Explorer, Author, Tech Creator, Digital Harbour, Naavik, Merchant Navy, Nautical Science, AI, Blockchain, Data Analytics, Maritime Technology, Public Speaker, EdTech, Entrepreneurship, Sustainable Shipping, Marine AI">
+    <meta name="author" content="Yash Gupta">
+    <meta name="robots" content="index, follow">
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:title" content="Yash Gupta | Visionary Maritime Innovator, AI Explorer & Author">
+    <meta property="og:description" content="Official portfolio of Yash Gupta: Merchant Navy Cadet, Founder of Digital Harbour & Naavik, AI Explorer, Author, and Tech Creator. Leading innovation in maritime digitalization, AI, and sustainable tech solutions.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://your-portfolio-url.com"> <!-- REPLACE WITH YOUR ACTUAL DOMAIN -->
+    <meta property="og:image" content="https://placehold.co/1200x630/050B1A/00E6FF?text=Yash+Gupta+Portfolio+Preview"> <!-- REPLACE WITH A HIGH-RES IMAGE OF YOUR SITE PREVIEW -->
+    <meta property="og:image:alt" content="Yash Gupta's professional portfolio showcasing maritime innovation, AI, and leadership.">
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@yourtwitterhandle"> <!-- REPLACE WITH YOUR TWITTER HANDLE -->
+    <meta name="twitter:creator" content="@yourtwitterhandle"> <!-- REPLACE WITH YOUR TWITTER HANDLE -->
+    <meta name="twitter:title" content="Yash Gupta | Visionary Maritime Innovator, AI Explorer & Author">
+    <meta name="twitter:description" content="Official portfolio of Yash Gupta: Merchant Navy Cadet, Founder of Digital Harbour & Naavik, AI Explorer, Author, and Tech Creator. Leading innovation in maritime digitalization, AI, and sustainable tech solutions.">
+    <meta name="twitter:image" content="https://placehold.co/1200x675/050B1A/00E6FF?text=Yash+Gupta+Portfolio+Twitter"> <!-- REPLACE WITH A HIGH-RES IMAGE FOR TWITTER -->
+
+
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Google Fonts: Montserrat and Poppins -->
@@ -11,35 +32,35 @@
     <!-- Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
-        /* Custom CSS for Glassmorphism, Neon Glows, and Animations */
+        /* Custom CSS Variables & Theme Definitions */
         :root {
             /* Dark Mode Defaults */
-            --background-primary: #070C1B;
-            --background-secondary: #0D1630;
-            --surface-glass: rgba(10, 17, 40, 0.5);
-            --text-primary: #F8F8F8;
-            --text-secondary: #C0C0C0;
-            --accent-teal: #00BFB2;
-            --accent-silver: #C0C0C0;
-            --border-glass: rgba(255, 255, 255, 0.1);
-            --shadow-color: rgba(0, 191, 178, 0.6);
-            --shadow-hover-color: rgba(0, 191, 178, 0.8);
-            --input-bg: #1A202C; /* Adjusted for contrast in dark mode */
+            --background-primary: #050B1A; /* Deep Dark Blue/Charcoal */
+            --background-secondary: #0A1128; /* Slightly lighter Navy */
+            --surface-glass: rgba(15, 25, 50, 0.6); /* Translucent Deep Blue */
+            --text-primary: #E0E7FF; /* Off-white / Light Lavender */
+            --text-secondary: #A0B0D0; /* Muted Blue-Grey */
+            --accent-main: #00E6FF; /* Electric Blue / Vibrant Aqua */
+            --accent-secondary: #FFD700; /* Subtle Gold/Amber for contrast */
+            --border-light: rgba(255, 255, 255, 0.15);
+            --shadow-strong: rgba(0, 230, 255, 0.4);
+            --shadow-subtle: rgba(0, 0, 0, 0.3);
+            --input-bg: #1A2038; /* Darker input background */
         }
 
         html.light {
             /* Light Mode Variables */
-            --background-primary: #F0F2F5;
-            --background-secondary: #FFFFFF;
-            --surface-glass: rgba(255, 255, 255, 0.8);
-            --text-primary: #1A202C;
-            --text-secondary: #4A5568;
-            --accent-teal: #008080;
-            --accent-silver: #6B7280;
-            --border-glass: rgba(0, 0, 0, 0.1);
-            --shadow-color: rgba(0, 128, 128, 0.2);
-            --shadow-hover-color: rgba(0, 128, 128, 0.4);
-            --input-bg: #E2E8F0; /* Adjusted for contrast in light mode */
+            --background-primary: #F0F4F8; /* Light Grey Blue */
+            --background-secondary: #FFFFFF; /* Pure White */
+            --surface-glass: rgba(255, 255, 255, 0.85); /* More Opaque White */
+            --text-primary: #2C3E50; /* Dark Charcoal */
+            --text-secondary: #607D8B; /* Medium Grey Blue */
+            --accent-main: #007BFF; /* Standard Blue */
+            --accent-secondary: #FFA000; /* Orange Amber */
+            --border-light: rgba(0, 0, 0, 0.1);
+            --shadow-strong: rgba(0, 123, 255, 0.2);
+            --shadow-subtle: rgba(0, 0, 0, 0.1);
+            --input-bg: #EAF0F6; /* Lighter input background */
         }
 
         body {
@@ -47,49 +68,52 @@
             background-color: var(--background-primary);
             color: var(--text-primary);
             overflow-x: hidden; /* Prevent horizontal scroll */
-            transition: background-color 0.5s ease, color 0.5s ease;
+            transition: background-color 0.6s ease, color 0.6s ease;
         }
 
         .gradient-bg {
             background: linear-gradient(135deg, var(--background-primary) 0%, var(--background-secondary) 100%);
-            transition: background 0.5s ease;
+            transition: background 0.6s ease;
         }
 
         .glassmorphism {
-            backdrop-filter: blur(10px) saturate(180%);
-            -webkit-backdrop-filter: blur(10px) saturate(180%);
+            backdrop-filter: blur(12px) saturate(180%);
+            -webkit-backdrop-filter: blur(12px) saturate(180%);
             background-color: var(--surface-glass);
-            border: 1px solid var(--border-glass);
+            border: 1px solid var(--border-light);
             border-radius: 1.5rem; /* Consistent rounded corners */
-            transition: background-color 0.5s ease, border-color 0.5s ease;
+            transition: background-color 0.6s ease, border-color 0.6s ease;
         }
 
         .neon-glow {
-            text-shadow: 0 0 5px var(--accent-teal), 0 0 10px var(--accent-teal), 0 0 15px var(--accent-teal);
-            transition: text-shadow 0.5s ease;
+            /* Removed text-shadow for dark mode as requested */
+            color: var(--accent-main); /* Still use accent color for contrast */
+            transition: color 0.6s ease;
         }
         html.light .neon-glow {
-            text-shadow: none; /* No neon glow in light mode */
-            color: var(--accent-teal);
+            text-shadow: none;
+            color: var(--accent-main);
         }
 
-        .btn-neon {
-            @apply relative overflow-hidden transition-all duration-300 ease-in-out;
-            background-image: linear-gradient(to right, var(--accent-teal) 0%, #30CFD0 51%, var(--accent-teal) 100%);
+        .btn-futuristic {
+            @apply relative overflow-hidden transition-all duration-400 ease-in-out font-semibold text-center;
+            background-image: linear-gradient(to right, var(--accent-main) 0%, #30CFD0 51%, var(--accent-main) 100%);
             background-size: 200% auto;
             border-radius: 0.75rem;
-            box-shadow: 0 0 20px var(--shadow-color);
-            color: var(--text-primary); /* Button text color */
+            box-shadow: 0 0 25px var(--shadow-strong);
+            color: var(--background-primary); /* Dark text on vibrant button */
+            padding: 1rem 2.5rem; /* Slightly larger padding */
         }
-        html.light .btn-neon {
-            background-image: linear-gradient(to right, var(--accent-teal) 0%, #00B2B2 51%, var(--accent-teal) 100%);
+        html.light .btn-futuristic {
+            background-image: linear-gradient(to right, var(--accent-main) 0%, #00B2B2 51%, var(--accent-main) 100%);
             color: var(--background-secondary); /* Dark text on light button */
-            box-shadow: 0 0 15px var(--shadow-color);
+            box-shadow: 0 0 18px var(--shadow-strong);
         }
 
-        .btn-neon:hover {
+        .btn-futuristic:hover {
             background-position: right center; /* change the direction of the change */
-            box-shadow: 0 0 30px var(--shadow-hover-color);
+            box-shadow: 0 0 40px var(--shadow-strong);
+            transform: translateY(-3px); /* Subtle lift */
         }
 
         /* Hero background canvas */
@@ -99,19 +123,19 @@
             left: 0;
             width: 100%;
             height: 100%;
-            z-index: 0; /* Ensure it's behind content but above hero-background-animation if present */
-            opacity: 0.2; /* Subtlety */
-            transition: opacity 0.5s ease;
+            z-index: 0; /* Ensure it's behind content */
+            opacity: 0.15; /* Subtlety */
+            transition: opacity 0.6s ease;
         }
         html.light #hero-canvas {
-            opacity: 0.1; /* Even more subtle in light mode */
+            opacity: 0.08; /* Even more subtle in light mode */
         }
 
         /* Subtle scroll animations */
         .animate-on-scroll {
             opacity: 0;
-            transform: translateY(20px);
-            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+            transform: translateY(25px); /* Slightly more pronounced */
+            transition: opacity 0.7s ease-out, transform 0.7s ease-out; /* Longer, smoother */
         }
         .animate-on-scroll.is-visible {
             opacity: 1;
@@ -130,39 +154,40 @@
             justify-content: center;
             align-items: center;
             z-index: 9999;
-            transition: opacity 0.5s ease-out, background-color 0.5s ease;
+            transition: opacity 0.6s ease-out, background-color 0.6s ease;
         }
         .preloader-logo {
-            width: 100px;
-            height: 100px;
-            animation: pulse 1.5s infinite;
+            width: 120px; /* Slightly larger logo */
+            height: 120px;
+            animation: pulse 1.8s infinite; /* Slower pulse */
         }
         @keyframes pulse {
-            0% { transform: scale(0.9); opacity: 0.8; }
-            50% { transform: scale(1); opacity: 1; }
-            100% { transform: scale(0.9); opacity: 0.8; }
+            0% { transform: scale(0.9); opacity: 0.8; filter: drop-shadow(0 0 5px var(--accent-main)); }
+            50% { transform: scale(1); opacity: 1; filter: drop-shadow(0 0 15px var(--accent-main)); }
+            100% { transform: scale(0.9); opacity: 0.8; filter: drop-shadow(0 0 5px var(--accent-main)); }
         }
 
         /* Custom scrollbar for better aesthetics */
         ::-webkit-scrollbar {
-            width: 8px;
+            width: 10px; /* Slightly wider */
         }
         ::-webkit-scrollbar-track {
             background: var(--background-primary);
         }
         ::-webkit-scrollbar-thumb {
-            background: var(--accent-teal);
-            border-radius: 4px;
+            background: var(--accent-main);
+            border-radius: 5px;
         }
         ::-webkit-scrollbar-thumb:hover {
-            background: #00A397;
+            background: color-mix(in srgb, var(--accent-main) 80%, black); /* Darker on hover */
         }
 
         /* Active navigation link highlight */
         .nav-link.active {
-            color: var(--accent-teal);
+            color: var(--accent-main);
             font-weight: 600;
-            border-bottom: 2px solid var(--accent-teal);
+            border-bottom: 2px solid var(--accent-main);
+            transform: translateY(-2px); /* Subtle lift */
         }
 
         /* Mobile contact button */
@@ -171,16 +196,17 @@
             bottom: 20px;
             right: 20px;
             z-index: 1000;
-            background-color: var(--accent-teal);
+            background-color: var(--accent-main);
             color: var(--background-secondary);
-            padding: 1rem 1.5rem;
+            padding: 1.1rem 1.8rem; /* Larger touch target */
             border-radius: 9999px; /* Fully rounded */
-            box-shadow: 0 4px 20px var(--shadow-color);
-            transition: transform 0.3s ease-in-out, background-color 0.5s ease, color 0.5s ease, box-shadow 0.5s ease;
+            box-shadow: 0 6px 25px var(--shadow-strong);
+            transition: transform 0.3s ease-in-out, background-color 0.6s ease, color 0.6s ease, box-shadow 0.6s ease;
             display: none; /* Hidden by default, shown on mobile */
+            font-weight: 600;
         }
         .mobile-contact-button:hover {
-            transform: scale(1.05);
+            transform: scale(1.1); /* More pronounced scaling */
         }
         @media (max-width: 768px) {
             .mobile-contact-button {
@@ -188,17 +214,86 @@
             }
         }
 
-        /* Project detail page styling */
-        .project-detail-section {
+        /* Project detail modal styling */
+        .project-detail-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.85); /* Darker overlay */
+            z-index: 1000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             opacity: 0;
-            max-height: 0;
-            overflow: hidden;
-            transition: opacity 0.5s ease-out, max-height 0.7s ease-out;
+            visibility: hidden;
+            transition: opacity 0.4s ease-out, visibility 0.4s ease-out;
+            padding: 1rem;
+            overflow-y: auto; /* Allow scrolling within the overlay */
         }
-        .project-detail-section.active {
+        .project-detail-overlay.active {
             opacity: 1;
-            max-height: 5000px; /* Adjusted to accommodate longer content */
+            visibility: visible;
         }
+        .project-detail-content {
+            background-color: var(--background-primary);
+            color: var(--text-primary);
+            border-radius: 2rem; /* More rounded corners */
+            padding: 2.5rem; /* More generous padding */
+            max-width: 900px; /* Max width for readability */
+            width: 100%;
+            max-height: 90vh; /* Limit height to viewport */
+            overflow-y: auto; /* Enable scrolling for content */
+            position: relative;
+            transform: scale(0.9);
+            opacity: 0;
+            transition: transform 0.4s ease-out, opacity 0.4s ease-out;
+            box-shadow: 0 0 50px rgba(0, 230, 255, 0.3); /* Stronger glow */
+        }
+        .project-detail-overlay.active .project-detail-content {
+            transform: scale(1);
+            opacity: 1;
+        }
+        .project-detail-content::-webkit-scrollbar {
+            width: 8px;
+        }
+        .project-detail-content::-webkit-scrollbar-track {
+            background: var(--background-primary);
+        }
+        .project-detail-content::-webkit-scrollbar-thumb {
+            background: var(--accent-main);
+            border-radius: 4px;
+        }
+        .project-detail-content::-webkit-scrollbar-thumb:hover {
+            background: color-mix(in srgb, var(--accent-main) 80%, black);
+        }
+
+        .close-button {
+            position: sticky; /* Make close button sticky to the top right */
+            top: 0.5rem;
+            right: 0.5rem;
+            background: var(--background-secondary);
+            border: 1px solid var(--border-light);
+            border-radius: 9999px;
+            width: 2.5rem;
+            height: 2.5rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: var(--text-secondary);
+            cursor: pointer;
+            font-size: 1.5rem;
+            transition: all 0.3s ease;
+            z-index: 10; /* Ensure it's above content */
+            float: right; /* Position to the right within its flow context */
+        }
+        .close-button:hover {
+            color: var(--accent-main);
+            background-color: var(--surface-glass);
+            transform: rotate(90deg);
+        }
+        
         /* Table styling within project details */
         .project-detail-section table {
             width: 100%;
@@ -208,71 +303,85 @@
             overflow-x: auto; /* Ensure tables are scrollable on smaller screens */
             display: block; /* For horizontal scroll */
             white-space: nowrap; /* Prevent text wrapping inside cells */
+            border-radius: 0.75rem; /* Rounded table corners */
+            overflow: hidden; /* Ensures border-radius applies */
         }
 
         .project-detail-section th,
         .project-detail-section td {
-            border: 1px solid var(--border-glass);
-            padding: 0.75rem;
+            border: 1px solid var(--border-light);
+            padding: 1rem;
             text-align: left;
             vertical-align: top;
             white-space: normal; /* Allow normal wrapping within cell content */
         }
 
         .project-detail-section th {
-            background-color: rgba(0, 191, 178, 0.2); /* Teal accent for headers */
-            color: var(--accent-teal);
+            background-color: color-mix(in srgb, var(--accent-main) 15%, transparent); /* Lighter accent for headers */
+            color: var(--accent-main);
             font-weight: 600;
-            transition: background-color 0.5s ease, color 0.5s ease;
+            transition: background-color 0.6s ease, color 0.6s ease;
         }
         html.light .project-detail-section th {
-            background-color: rgba(0, 128, 128, 0.1);
-            color: var(--accent-teal);
+            background-color: color-mix(in srgb, var(--accent-main) 10%, transparent);
+            color: var(--accent-main);
         }
 
         .project-detail-section tr:nth-child(even) {
-            background-color: rgba(10, 17, 40, 0.3);
-            transition: background-color 0.5s ease;
+            background-color: color-mix(in srgb, var(--background-secondary) 50%, transparent); /* Slightly darker rows */
+            transition: background-color 0.6s ease;
         }
         html.light .project-detail-section tr:nth-child(even) {
-            background-color: rgba(0, 0, 0, 0.05);
+            background-color: color-mix(in srgb, var(--background-primary) 50%, transparent);
         }
 
         /* Skill Grid styles */
         .skill-item {
             background-color: var(--background-secondary);
-            border: 1px solid var(--border-glass);
+            border: 1px solid var(--border-light);
             border-radius: 0.75rem;
-            padding: 1rem;
+            padding: 1.2rem; /* Larger padding */
             display: flex;
             flex-direction: column;
             align-items: center;
             text-align: center;
-            transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.5s ease, border-color 0.5s ease;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.6s ease, border-color 0.6s ease;
+            box-shadow: 0 6px 15px var(--shadow-subtle);
         }
         .skill-item:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 20px var(--shadow-color);
+            transform: translateY(-7px) scale(1.02);
+            box-shadow: 0 10px 25px var(--shadow-strong);
+        }
+        .skill-item i {
+            color: var(--accent-main);
+            font-size: 3.5rem; /* Larger icons */
+            margin-bottom: 0.75rem;
+        }
+        html.light .skill-item {
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+        }
+        html.light .skill-item:hover {
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
         }
 
         /* Services Card styles */
         .service-card {
             background-color: var(--background-secondary);
-            border: 1px solid var(--border-glass);
+            border: 1px solid var(--border-light);
             border-radius: 1.5rem;
-            padding: 2rem;
+            padding: 2.5rem; /* More generous padding */
             text-align: left;
-            transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.5s ease, border-color 0.5s ease;
-            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.6s ease, border-color 0.6s ease;
+            box-shadow: 0 8px 20px var(--shadow-subtle);
         }
         .service-card:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 12px 30px var(--shadow-color);
+            transform: translateY(-10px) scale(1.01);
+            box-shadow: 0 15px 35px var(--shadow-strong);
         }
         .service-card i {
-            color: var(--accent-teal);
-            transition: color 0.5s ease;
+            color: var(--accent-main);
+            font-size: 4rem; /* Larger icons */
+            margin-bottom: 1rem;
         }
         html.light .service-card {
             box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
@@ -280,6 +389,47 @@
         html.light .service-card:hover {
             box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
         }
+
+        /* Book Events section */
+        .stats-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-width: 120px; /* Ensure space for content */
+            padding: 1rem;
+        }
+        .stats-item i {
+            font-size: 3.5rem;
+            color: var(--accent-main);
+            margin-bottom: 0.5rem;
+        }
+        .stats-item .value {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--accent-secondary); /* Use secondary accent for value */
+            line-height: 1;
+        }
+        .stats-item .label {
+            font-size: 1rem;
+            color: var(--text-secondary);
+            text-align: center;
+        }
+
+        /* Responsive adjustments for layout components */
+        @media (max-width: 767px) {
+            .project-detail-content {
+                padding: 1.5rem;
+                border-radius: 1.5rem;
+            }
+            .service-card, .skill-item {
+                padding: 1.5rem;
+            }
+            .stats-item {
+                padding: 0.5rem;
+            }
+        }
+
     </style>
 </head>
 <body class="gradient-bg font-poppins">
@@ -290,7 +440,7 @@
             <path d="M12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2ZM12 4C16.4183 4 20 7.58172 20 12C20 16.4183 16.4183 20 12 20C7.58172 20 4 16.4183 4 12C4 7.58172 7.58172 4 12 4ZM10 8C10 7.44772 10.4477 7 11 7H13C13.5523 7 14 7.44772 14 8V11H17C17.5523 11 18 11.4477 18 12C18 12.5523 17.5523 13 17 13H14V16C14 16.5523 13.5523 17 13 17H11C10.4477 17 10 16.5523 10 16V13H7C6.44772 13 6 12.5523 6 12C6 11.4477 6.44772 11 7 11H10V8Z" fill="url(#paint0_linear_1_2)"/>
             <defs>
                 <linearGradient id="paint0_linear_1_2" x1="12" y1="2" x2="12" y2="22" gradientUnits="userSpaceOnUse">
-                    <stop stop-color="#00BFB2"/>
+                    <stop stop-color="var(--accent-main)"/>
                     <stop offset="1" stop-color="#30CFD0"/>
                 </linearGradient>
             </defs>
@@ -298,34 +448,34 @@
     </div>
 
     <!-- Top Navigation Bar -->
-    <header id="navbar" class="fixed top-0 left-0 right-0 bg-background-secondary/80 glassmorphism z-50 py-4 shadow-lg">
+    <header id="navbar" class="fixed top-0 left-0 right-0 bg-background-secondary/80 glassmorphism z-50 py-4 shadow-lg backdrop-blur-md">
         <nav class="container mx-auto flex justify-between items-center px-4">
             <div class="flex items-center space-x-2">
                 <!-- Logo: Yash Gupta -->
                 <a href="#home" class="flex items-center text-xl font-bold text-text-primary font-montserrat">
                     <svg class="w-8 h-8 mr-2" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M12 2L3 7L12 12L21 7L12 2ZM3 17L12 22L21 17M3 12L12 17L21 12" stroke="var(--accent-teal)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M7 10L7 14M17 10L17 14" stroke="var(--accent-silver)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M12 2L3 7L12 12L21 7L12 2ZM3 17L12 22L21 17M3 12L12 17L21 12" stroke="var(--accent-main)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M7 10L7 14M17 10L17 14" stroke="var(--accent-secondary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
-                    <span class="neon-glow">Yash Gupta</span>
+                    <span class="neon-glow text-xl md:text-2xl font-bold">Yash Gupta</span>
                 </a>
             </div>
             <ul class="hidden md:flex space-x-8 font-montserrat text-text-secondary text-lg">
-                <li><a href="#home" class="nav-link hover:text-accent-teal transition-colors duration-300 py-2">Home</a></li>
-                <li><a href="#about" class="nav-link hover:text-accent-teal transition-colors duration-300 py-2">About</a></li>
-                <li><a href="#services" class="nav-link hover:text-accent-teal transition-colors duration-300 py-2">Services</a></li>
-                <li><a href="#projects" class="nav-link hover:text-accent-teal transition-colors duration-300 py-2">Projects</a></li>
-                <li><a href="#publications" class="nav-link hover:text-accent-teal transition-colors duration-300 py-2">Publications</a></li>
-                <li><a href="#book-events" class="nav-link hover:text-accent-teal transition-colors duration-300 py-2">Book Events</a></li>
-                <li><a href="#contact" class="nav-link hover:text-accent-teal transition-colors duration-300 py-2">Contact</a></li>
+                <li><a href="#home" class="nav-link hover:text-accent-main transition-colors duration-300 py-2">Home</a></li>
+                <li><a href="#about" class="nav-link hover:text-accent-main transition-colors duration-300 py-2">About</a></li>
+                <li><a href="#services" class="nav-link hover:text-accent-main transition-colors duration-300 py-2">Services</a></li>
+                <li><a href="#projects" class="nav-link hover:text-accent-main transition-colors duration-300 py-2">Projects</a></li>
+                <li><a href="#publications" class="nav-link hover:text-accent-main transition-colors duration-300 py-2">Publications</a></li>
+                <li><a href="#book-events" class="nav-link hover:text-accent-main transition-colors duration-300 py-2">Book Events</a></li>
+                <li><a href="#contact" class="nav-link hover:text-accent-main transition-colors duration-300 py-2">Contact</a></li>
             </ul>
             <div class="flex items-center space-x-4">
                 <!-- Dark/Light Mode Toggle -->
-                <button id="theme-toggle" class="text-text-primary text-2xl focus:outline-none transition-colors duration-300">
+                <button id="theme-toggle" aria-label="Toggle dark/light theme" class="text-text-primary text-2xl focus:outline-none transition-colors duration-300 p-2 rounded-full hover:bg-surface-glass">
                     <i class="fas fa-moon" id="theme-icon"></i>
                 </button>
                 <div class="md:hidden">
-                    <button id="mobile-menu-button" class="text-text-primary focus:outline-none">
+                    <button id="mobile-menu-button" aria-label="Open mobile menu" class="text-text-primary focus:outline-none p-2 rounded-full hover:bg-surface-glass">
                         <i class="fas fa-bars text-2xl"></i>
                     </button>
                 </div>
@@ -334,13 +484,13 @@
         <!-- Mobile Menu (hidden by default) -->
         <div id="mobile-menu" class="hidden md:hidden absolute top-full left-0 w-full bg-background-secondary/90 glassmorphism shadow-lg py-4">
             <ul class="flex flex-col items-center space-y-4 text-xl font-montserrat text-text-secondary">
-                <li><a href="#home" class="nav-link hover:text-accent-teal transition-colors duration-300 py-2">Home</a></li>
-                <li><a href="#about" class="nav-link hover:text-accent-teal transition-colors duration-300 py-2">About</a></li>
-                <li><a href="#services" class="nav-link hover:text-accent-teal transition-colors duration-300 py-2">Services</a></li>
-                <li><a href="#projects" class="nav-link hover:text-accent-teal transition-colors duration-300 py-2">Projects</a></li>
-                <li><a href="#publications" class="nav-link hover:text-accent-teal transition-colors duration-300 py-2">Publications</a></li>
-                <li><a href="#book-events" class="nav-link hover:text-accent-teal transition-colors duration-300 py-2">Book Events</a></li>
-                <li><a href="#contact" class="nav-link hover:text-accent-teal transition-colors duration-300 py-2">Contact</a></li>
+                <li><a href="#home" class="nav-link hover:text-accent-main transition-colors duration-300 py-2 block w-full text-center">Home</a></li>
+                <li><a href="#about" class="nav-link hover:text-accent-main transition-colors duration-300 py-2 block w-full text-center">About</a></li>
+                <li><a href="#services" class="nav-link hover:text-accent-main transition-colors duration-300 py-2 block w-full text-center">Services</a></li>
+                <li><a href="#projects" class="nav-link hover:text-accent-main transition-colors duration-300 py-2 block w-full text-center">Projects</a></li>
+                <li><a href="#publications" class="nav-link hover:text-accent-main transition-colors duration-300 py-2 block w-full text-center">Publications</a></li>
+                <li><a href="#book-events" class="nav-link hover:text-accent-main transition-colors duration-300 py-2 block w-full text-center">Book Events</a></li>
+                <li><a href="#contact" class="nav-link hover:text-accent-main transition-colors duration-300 py-2 block w-full text-center">Contact</a></li>
             </ul>
         </div>
     </header>
@@ -354,7 +504,7 @@
 
         <!-- Home Page - Hero Section -->
         <section id="home" class="relative h-screen flex items-center justify-center text-center p-4 overflow-hidden">
-            <canvas id="hero-canvas"></canvas> <!-- Canvas for interactive background -->
+            <canvas id="hero-canvas" class="absolute inset-0"></canvas> <!-- Canvas for interactive background -->
             <div class="relative z-10 max-w-4xl mx-auto animate-on-scroll">
                 <h1 class="text-5xl md:text-7xl font-bold font-montserrat leading-tight mb-6 neon-glow">
                     Building the Future of Maritime through Innovation, AI & Purposeful Projects
@@ -363,13 +513,13 @@
                     BSc Nautical Science (TS Chanakya, IMU Navi Mumbai Campus) | Merchant Navy Cadet | Author | Founder of Digital Harbour | Founder of Naavik | AI Startup Builder
                 </p>
                 <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-6">
-                    <a href="#projects" class="btn-neon text-text-primary px-8 py-4 text-lg font-semibold rounded-xl shadow-lg transition-all duration-300 ease-in-out hover:scale-105">
+                    <a href="https://digital-harbour.onrender.com/" target="_blank" rel="noopener noreferrer" class="btn-futuristic text-lg">
                         View My Projects
                     </a>
-                    <a href="https://digital-harbour.onrender.com/" target="_blank" rel="noopener noreferrer" class="btn-neon text-text-primary px-8 py-4 text-lg font-semibold rounded-xl shadow-lg transition-all duration-300 ease-in-out hover:scale-105">
-                        Read My Blogs
+                    <a href="https://digital-harbour.onrender.com/" target="_blank" rel="noopener noreferrer" class="btn-futuristic text-lg">
+                        Visit Digital Harbour 
                     </a>
-                    <a href="https://naavik.godaddysites.com" target="_blank" rel="noopener noreferrer" class="btn-neon px-8 py-4 text-lg font-semibold rounded-xl shadow-lg transition-all duration-300 ease-in-out hover:scale-105">
+                    <a href="https://naavik.godaddysites.com" target="_blank" rel="noopener noreferrer" class="btn-futuristic text-lg">
                         Visit Naavik
                     </a>
                 </div>
@@ -382,42 +532,43 @@
                 <h2 class="text-4xl font-bold text-center mb-16 neon-glow animate-on-scroll">Featured Projects</h2>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
                     <!-- Digital Harbour -->
-                    <div class="glassmorphism p-8 rounded-2xl shadow-xl hover:shadow-teal-accent/30 transition-all duration-300 ease-in-out transform hover:-translate-y-2 animate-on-scroll">
-                        <img src="https://placehold.co/100x100/0A1128/00BFB2?text=Digital+Harbour+Logo" alt="Digital Harbour Logo" class="w-24 h-24 mx-auto mb-6 rounded-full border-2 border-accent-teal p-2">
-                        <h3 class="text-2xl font-bold text-center mb-4 text-accent-teal">Digital Harbour</h3>
+                    <div class="glassmorphism p-8 rounded-2xl shadow-xl hover:shadow-[0_0_20px_var(--accent-main)] transition-all duration-300 ease-in-out transform hover:-translate-y-3 animate-on-scroll">
+                        <img src="dh.jpg" alt="Digital Harbour Logo - Maritime, AI, Education Platform" class="w-28 h-28 mx-auto mb-6 rounded-full border-2 border-accent-main p-2 object-cover">
+                        <h3 class="text-2xl font-bold text-center mb-4 text-accent-main">Digital Harbour</h3>
                         <p class="text-text-secondary text-center mb-6">
                             Platform merging maritime, AI, marketing, and tech education. Features blogs, contests, AI assistant (Marina), digital library, mentor panel.
                         </p>
                         <div class="text-center">
-                            <a href="https://digital-harbour.onrender.com/" target="_blank" rel="noopener noreferrer" class="btn-neon px-6 py-3 text-text-primary font-semibold rounded-lg text-sm">
+                            <a href="https://digital-harbour.onrender.com/" target="_blank" rel="noopener noreferrer" class="btn-futuristic text-base">
                                 Visit Website
                             </a>
                         </div>
                     </div>
 
                     <!-- SeaMate AI -->
-                    <div class="glassmorphism p-8 rounded-2xl shadow-xl hover:shadow-teal-accent/30 transition-all duration-300 ease-in-out transform hover:-translate-y-2 animate-on-scroll">
-                        <img src="https://placehold.co/100x100/0A1128/C0C0C0?text=SeaMate+AI+Logo" alt="SeaMate AI Logo" class="w-24 h-24 mx-auto mb-6 rounded-full border-2 border-accent-silver p-2">
-                        <h3 class="text-2xl font-bold text-center mb-4 text-accent-silver">SeaMate AI</h3>
+                    <div class="glassmorphism p-8 rounded-2xl shadow-xl hover:shadow-[0_0_20px_var(--accent-main)] transition-all duration-300 ease-in-out transform hover:-translate-y-3 animate-on-scroll">
+                        <!-- Hypothetical SeaMate AI Logo -->
+                        <img src="https://placehold.co/120x120/0A1128/FFD700?text=SeaMate+AI" alt="SeaMate AI Logo - Smart Assistant for Seafarers" class="w-28 h-28 mx-auto mb-6 rounded-full border-2 border-accent-secondary p-2 object-cover">
+                        <h3 class="text-2xl font-bold text-center mb-4 text-accent-secondary">SeaMate AI</h3>
                         <p class="text-text-secondary text-center mb-6">
                             An AI-powered smart assistant app crafted specifically for seafarers to improve safety, productivity, and communication.
                         </p>
                         <div class="text-center">
-                            <button onclick="showProjectDetail('seamate-ai')" class="btn-neon px-6 py-3 text-text-primary font-semibold rounded-lg text-sm">
+                            <button onclick="showProjectDetail('seamate-ai')" class="btn-futuristic text-base">
                                 Learn More
                             </button>
                         </div>
                     </div>
 
                     <!-- BlueCarbon MVP -->
-                    <div class="glassmorphism p-8 rounded-2xl shadow-xl hover:shadow-teal-accent/30 transition-all duration-300 ease-in-out transform hover:-translate-y-2 animate-on-scroll">
-                        <img src="https://placehold.co/100x100/0A1128/00BFB2?text=BlueCarbon+Logo" alt="BlueCarbon MVP Logo" class="w-24 h-24 mx-auto mb-6 rounded-full border-2 border-accent-teal p-2">
-                        <h3 class="text-2xl font-bold text-center mb-4 text-accent-teal">BlueCarbon MVP</h3>
+                    <div class="glassmorphism p-8 rounded-2xl shadow-xl hover:shadow-[0_0_20px_var(--accent-main)] transition-all duration-300 ease-in-out transform hover:-translate-y-3 animate-on-scroll">
+                        <img src="https://placehold.co/120x120/0A1128/00E6FF?text=Blue+Carbon" alt="BlueCarbon MVP Logo - Blockchain for Maritime Sustainability" class="w-28 h-28 mx-auto mb-6 rounded-full border-2 border-accent-main p-2 object-cover">
+                        <h3 class="text-2xl font-bold text-center mb-4 text-accent-main">BlueCarbon MVP</h3>
                         <p class="text-text-secondary text-center mb-6">
                             Blockchain-based carbon credit platform for maritime sustainability. Enables verifiable and transparent operations.
                         </p>
                         <div class="text-center">
-                            <button onclick="showProjectDetail('bluecarbon-mvp')" class="btn-neon px-6 py-3 text-text-primary font-semibold rounded-lg text-sm">
+                            <button onclick="showProjectDetail('bluecarbon-mvp')" class="btn-futuristic text-base">
                                 Learn More
                             </button>
                         </div>
@@ -432,73 +583,89 @@
                 <h2 class="text-4xl font-bold text-center mb-16 neon-glow animate-on-scroll">About Me</h2>
                 <div class="flex flex-col md:flex-row items-center md:space-x-12 animate-on-scroll">
                     <div class="w-full md:w-1/3 mb-10 md:mb-0 relative flex justify-center">
-                        <div class="relative w-72 h-72 sm:w-80 sm:h-80 rounded-full overflow-hidden border-4 border-accent-teal shadow-lg">
-                            <!-- Your actual image - ensure this path is correct if hosted locally, or use a full URL -->
-                            <img src="image.png-6d924276-34b2-418e-83bc-19ae6eebf9ce" alt="Yash Gupta Portrait Photo" class="object-cover w-full h-full rounded-full transform hover:scale-105 transition-transform duration-300">
-                            <div class="absolute inset-0 rounded-full shadow-inner-lg shadow-accent-teal/50 opacity-70 animate-pulse"></div>
+                        <div class="relative w-full h-full rounded-2xl overflow-hidden border-4 border-accent-main shadow-lg flex-shrink-0">
+                            <!-- Your actual image - it will be cropped circularly -->
+                            <img src="yash.png" alt="Yash Gupta Portrait Photo - Merchant Navy Cadet and Innovator" class="object-cover w-full h-full rounded-2xl transform hover:scale-105 transition-transform duration-300">
+                            <div class="absolute inset-0 rounded-2xl shadow-inner-lg shadow-[0_0_25px_var(--accent-main)] opacity-70 animate-pulse"></div>
                         </div>
                     </div>
-                    <div class="w-full md:w-2/3 glassmorphism p-8 rounded-2xl shadow-xl">
-                        <h3 class="text-3xl font-semibold mb-6 text-accent-teal">My Journey: From Sea to Silicon</h3>
+                    <div class="w-full md:w-2/3 glassmorphism p-8 rounded-2xl shadow-xl flex-grow">
+                        <h3 class="text-3xl font-semibold mb-6 text-accent-main">My Journey: From Sea to Silicon</h3>
                         <p class="text-text-secondary leading-relaxed mb-6 text-lg">
-                            I am <strong class="text-text-primary">Yash Gupta</strong>. My journey began as a <strong class="text-text-primary">Merchant Navy Cadet</strong>, having completed my <strong class="text-text-primary">BSc Nautical Science from TS Chanakya (Indian Maritime University, Navi Mumbai Campus)</strong>. This foundational maritime experience instilled discipline, resilience, and a deep understanding of the global shipping industry. This foundation fueled my passion for innovation, leading me to transition into the exciting realms of <strong class="text-text-primary">technology and Artificial Intelligence</strong>.
+                            I am <strong class="text-text-primary">Yash Gupta</strong>, a passionate visionary at the intersection of maritime innovation and advanced technology. My journey began as a dedicated <strong class="text-text-primary">Merchant Navy Cadet</strong>, where I gained invaluable first-hand experience and a profound understanding of the global shipping industry. I proudly completed my <strong class="text-text-primary">BSc Nautical Science from TS Chanakya (Indian Maritime University, Navi Mumbai Campus)</strong>, equipping me with a strong operational foundation.
                         </p>
                         <p class="text-text-secondary leading-relaxed mb-6 text-lg">
-                            I am a <strong class="text-text-primary">published author</strong>, a <strong class="text-text-primary">digital innovator</strong>, and the <strong class="text-text-primary">founder of Digital Harbour</strong> and <strong class="text-text-primary">Naavik</strong>. My commitment to education is profound, having had the privilege to mentor <strong class="text-text-primary">over 10,000 students across 100+ schools globally</strong>, sharing insights into technology and the future of maritime.
+                            This rich maritime background fueled my drive to innovate, propelling me into the dynamic realms of <strong class="text-text-primary">Artificial Intelligence and cutting-edge technology</strong>. Beyond my technical pursuits, I am a <strong class="text-text-primary">published author</strong>, a recognized <strong class="text-text-primary">digital innovator</strong>, and the proud <strong class="text-text-primary">founder of Digital Harbour</strong>, a platform dedicated to maritime and tech education, and <strong class="text-text-primary">Naavik</strong>, a community and support hub for seafarers.
                         </p>
                         <p class="text-text-secondary leading-relaxed mb-6 text-lg">
-                            My vision is clear: to <strong class="text-text-primary">digitize and innovate the maritime sector</strong> using cutting-edge technologies like <strong class="text-text-primary">AI, blockchain, and advanced analytics</strong>. My mission is to build impactful, accessible tech solutions that truly serve and uplift the global seafaring community, making their lives safer, more efficient, and more connected.
+                            My commitment to education and mentorship is deep-rooted; I've had the immense privilege to directly mentor <strong class="text-text-primary">over 10,000 students across 100+ schools globally</strong>, sharing insights into the transformative power of technology in the maritime sector. My overarching vision is clear: to <strong class="text-text-primary">digitize, automate, and innovate the maritime industry</strong> using advanced technologies like <strong class="text-text-primary">AI, blockchain, and robust data analytics</strong>. My mission is to build impactful, accessible, and scalable tech solutions that genuinely uplift the global seafaring community, making their lives safer, more efficient, and more connected.
                         </p>
 
                         <!-- Skills Section within About Page -->
-                        <h4 class="text-2xl font-semibold mb-6 mt-10 text-accent-teal">My Core Skills</h4>
-                        <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
+                        <h4 class="text-2xl font-semibold mb-6 mt-10 text-accent-main">My Core Skills</h4>
+                        <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6">
                             <div class="skill-item">
-                                <i class="fas fa-ship text-4xl mb-2"></i>
-                                <span class="font-semibold text-text-primary">Maritime Operations</span>
+                                <i class="fas fa-ship" aria-hidden="true"></i>
+                                <span class="font-semibold text-text-primary text-sm">Maritime Operations</span>
                             </div>
                             <div class="skill-item">
-                                <i class="fas fa-robot text-4xl mb-2"></i>
-                                <span class="font-semibold text-text-primary">AI & Machine Learning</span>
+                                <i class="fas fa-robot" aria-hidden="true"></i>
+                                <span class="font-semibold text-text-primary text-sm">AI & Machine Learning</span>
                             </div>
                             <div class="skill-item">
-                                <i class="fas fa-laptop-code text-4xl mb-2"></i>
-                                <span class="font-semibold text-text-primary">Software Development</span>
+                                <i class="fas fa-laptop-code" aria-hidden="true"></i>
+                                <span class="font-semibold text-text-primary text-sm">Software Development</span>
                             </div>
                             <div class="skill-item">
-                                <i class="fab fa-blockchain text-4xl mb-2"></i>
-                                <span class="font-semibold text-text-primary">Blockchain Technology</span>
+                                <i class="fab fa-ethereum" aria-hidden="true"></i>
+                                <span class="font-semibold text-text-primary text-sm">Blockchain Technology</span>
                             </div>
                             <div class="skill-item">
-                                <i class="fas fa-chart-line text-4xl mb-2"></i>
-                                <span class="font-semibold text-text-primary">Data Analytics</span>
+                                <i class="fas fa-chart-line" aria-hidden="true"></i>
+                                <span class="font-semibold text-text-primary text-sm">Data Analytics</span>
                             </div>
                             <div class="skill-item">
-                                <i class="fas fa-book-open text-4xl mb-2"></i>
-                                <span class="font-semibold text-text-primary">Technical Writing</span>
+                                <i class="fas fa-file-alt" aria-hidden="true"></i>
+                                <span class="font-semibold text-text-primary text-sm">Technical Writing</span>
                             </div>
                             <div class="skill-item">
-                                <i class="fas fa-hands-helping text-4xl mb-2"></i>
-                                <span class="font-semibold text-text-primary">Mentorship & Education</span>
+                                <i class="fas fa-hands-helping" aria-hidden="true"></i>
+                                <span class="font-semibold text-text-primary text-sm">Mentorship & Education</span>
                             </div>
                             <div class="skill-item">
-                                <i class="fas fa-lightbulb text-4xl mb-2"></i>
-                                <span class="font-semibold text-text-primary">Innovation Strategy</span>
+                                <i class="fas fa-lightbulb" aria-hidden="true"></i>
+                                <span class="font-semibold text-text-primary text-sm">Innovation Strategy</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-project-diagram" aria-hidden="true"></i>
+                                <span class="font-semibold text-text-primary text-sm">Project Management</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-bullhorn" aria-hidden="true"></i>
+                                <span class="font-semibold text-text-primary text-sm">Digital Marketing</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-comments" aria-hidden="true"></i>
+                                <span class="font-semibold text-text-primary text-sm">Public Speaking</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-cogs" aria-hidden="true"></i>
+                                <span class="font-semibold text-text-primary text-sm">System Design</span>
                             </div>
                         </div>
 
                         <div class="flex flex-wrap gap-4 mt-8">
-                            <a href="/path/to/your-resume.pdf" download class="btn-neon px-6 py-3 text-text-primary font-semibold rounded-lg text-base flex items-center group">
+                            <a href="new 8688.pdf" download class="btn-futuristic text-base">
                                 <i class="fas fa-file-pdf mr-2 text-red-400 group-hover:scale-110 transition-transform"></i> Download Resume/CV
                             </a>
-                            <a href="/path/to/your-certifications.pdf" download class="btn-neon px-6 py-3 text-text-primary font-semibold rounded-lg text-base flex items-center group">
+                            <a href="https://placehold.co/100x100/0A1128/FFD700?text=Certifications" download class="btn-futuristic text-base">
                                 <i class="fas fa-certificate mr-2 text-yellow-300 group-hover:scale-110 transition-transform"></i> Download Certifications
                             </a>
                         </div>
                         <div class="flex space-x-6 mt-8">
-                            <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer" class="text-text-secondary hover:text-accent-teal text-3xl transition-colors duration-300" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                            <a href="mailto:guptay050@gmail.com" class="text-text-secondary hover:text-accent-teal text-3xl transition-colors duration-300" title="Email"><i class="fas fa-envelope"></i></a>
-                            <a href="https://twitter.com/yourprofile" target="_blank" rel="noopener noreferrer" class="text-text-secondary hover:text-accent-teal text-3xl transition-colors duration-300" title="Twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="https://www.linkedin.com/in/yash-gupta-02649322a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer" class="text-text-secondary hover:text-accent-main text-3xl transition-colors duration-300" aria-label="LinkedIn Profile"><i class="fab fa-linkedin"></i></a>
+                            <a href="mailto:guptay050@gmail.com" class="text-text-secondary hover:text-accent-main text-3xl transition-colors duration-300" aria-label="Send Email"><i class="fas fa-envelope"></i></a>
+                            <a href="https://twitter.com/yourprofile" target="_blank" rel="noopener noreferrer" class="text-text-secondary hover:text-accent-main text-3xl transition-colors duration-300" aria-label="Twitter Profile"><i class="fab fa-twitter"></i></a>
                         </div>
                     </div>
                 </div>
@@ -512,7 +679,7 @@
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
                     <!-- Service 1: Maritime AI Consultancy -->
                     <div class="service-card animate-on-scroll">
-                        <i class="fas fa-brain text-5xl mb-4"></i>
+                        <i class="fas fa-brain" aria-hidden="true"></i>
                         <h3 class="text-2xl font-bold mb-3 text-text-primary">Maritime AI & Digitalization Consultancy</h3>
                         <p class="text-text-secondary">
                             Leveraging AI, machine learning, and data analytics to optimize maritime operations, improve safety, and enhance efficiency. I provide strategic insights and roadmap development for digital transformation.
@@ -520,7 +687,7 @@
                     </div>
                     <!-- Service 2: Tech & Startup Mentorship -->
                     <div class="service-card animate-on-scroll">
-                        <i class="fas fa-graduation-cap text-5xl mb-4"></i>
+                        <i class="fas fa-graduation-cap" aria-hidden="true"></i>
                         <h3 class="text-2xl font-bold mb-3 text-text-primary">Tech & Startup Mentorship</h3>
                         <p class="text-text-secondary">
                             Guiding aspiring tech creators, entrepreneurs, and students in building impactful solutions, navigating startup challenges, and fostering innovation across various sectors.
@@ -528,7 +695,7 @@
                     </div>
                     <!-- Service 3: Blockchain Solutions for Maritime -->
                     <div class="service-card animate-on-scroll">
-                        <i class="fas fa-cubes text-5xl mb-4"></i>
+                        <i class="fas fa-cubes" aria-hidden="true"></i>
                         <h3 class="text-2xl font-bold mb-3 text-text-primary">Blockchain Solutions for Maritime</h3>
                         <p class="text-text-secondary">
                             Designing and implementing transparent, secure, and efficient blockchain solutions for supply chain management, carbon credit tracking, and maritime logistics.
@@ -536,7 +703,7 @@
                     </div>
                     <!-- Service 4: Technical Content Creation -->
                     <div class="service-card animate-on-scroll">
-                        <i class="fas fa-edit text-5xl mb-4"></i>
+                        <i class="fas fa-edit" aria-hidden="true"></i>
                         <h3 class="text-2xl font-bold mb-3 text-text-primary">Technical Content & Authoring</h3>
                         <p class="text-text-secondary">
                             Crafting engaging and insightful articles, whitepapers, and books on maritime technology, AI, innovation, and career development for diverse audiences.
@@ -544,7 +711,7 @@
                     </div>
                     <!-- Service 5: Predictive Analytics Implementation -->
                     <div class="service-card animate-on-scroll">
-                        <i class="fas fa-cogs text-5xl mb-4"></i>
+                        <i class="fas fa-cogs" aria-hidden="true"></i>
                         <h3 class="text-2xl font-bold mb-3 text-text-primary">Predictive Maintenance & Data Intelligence</h3>
                         <p class="text-text-secondary">
                             Developing and deploying AI-powered predictive analytics systems for fleet maintenance, operational efficiency, and data-driven decision-making in the maritime industry.
@@ -552,7 +719,7 @@
                     </div>
                     <!-- Service 6: Career Development & Training -->
                     <div class="service-card animate-on-scroll">
-                        <i class="fas fa-users text-5xl mb-4"></i>
+                        <i class="fas fa-users" aria-hidden="true"></i>
                         <h3 class="text-2xl font-bold mb-3 text-text-primary">Career Development & Vocational Training</h3>
                         <p class="text-text-secondary">
                             Providing comprehensive career counseling, vocational training, and specialized education programs to empower individuals for success in the Merchant Navy and broader professional fields.
@@ -568,229 +735,249 @@
                 <h2 class="text-4xl font-bold text-center mb-16 neon-glow animate-on-scroll">My Projects</h2>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
                     <!-- Project Card: Digital Harbour -->
-                    <div class="glassmorphism p-8 rounded-2xl shadow-xl hover:shadow-teal-accent/30 transition-all duration-300 ease-in-out transform hover:-translate-y-2 animate-on-scroll">
-                        <img src="https://placehold.co/100x100/0A1128/00BFB2?text=Digital+Harbour+Logo" alt="Digital Harbour Logo" class="w-24 h-24 mx-auto mb-6 rounded-full border-2 border-accent-teal p-2">
-                        <h3 class="text-2xl font-bold text-center mb-4 text-accent-teal">Digital Harbour</h3>
-                        <p class="text-text-secondary text-center mb-6 text-sm">
-                            Platform merging maritime, AI, marketing, and tech education. Features: Blogs, contests, AI assistant (Marina), digital library, mentor panel.
+                    <div class="glassmorphism p-8 rounded-2xl shadow-xl hover:shadow-[0_0_20px_var(--accent-main)] transition-all duration-300 ease-in-out transform hover:-translate-y-3 animate-on-scroll">
+                        <img src="dh.jpg" alt="Digital Harbour Logo - Maritime, AI, Education Platform" class="w-28 h-28 mx-auto mb-6 rounded-full border-2 border-accent-main p-2 object-cover">
+                        <h3 class="text-2xl font-bold text-center mb-4 text-accent-main">Digital Harbour</h3>
+                        <p class="text-text-secondary text-center mb-6">
+                            Platform merging maritime, AI, marketing, and tech education. Features blogs, contests, AI assistant (Marina), digital library, mentor panel.
                         </p>
                         <div class="text-center">
-                            <a href="https://digital-harbour.onrender.com/" target="_blank" rel="noopener noreferrer" class="btn-neon px-6 py-3 text-text-primary font-semibold rounded-lg text-sm">
+                            <a href="https://digital-harbour.onrender.com/" target="_blank" rel="noopener noreferrer" class="btn-futuristic text-base">
                                 Visit Website
                             </a>
                         </div>
                     </div>
 
-                    <!-- SeaMate AI -->
-                    <div class="glassmorphism p-8 rounded-2xl shadow-xl hover:shadow-teal-accent/30 transition-all duration-300 ease-in-out transform hover:-translate-y-2 animate-on-scroll">
-                        <img src="https://placehold.co/100x100/0A1128/C0C0C0?text=SeaMate+AI+Logo" alt="SeaMate AI Logo" class="w-24 h-24 mx-auto mb-6 rounded-full border-2 border-accent-silver p-2">
-                        <h3 class="text-2xl font-bold text-center mb-4 text-accent-silver">SeaMate AI</h3>
-                        <p class="text-text-secondary text-center mb-6 text-sm">
-                            An AI-powered smart assistant app crafted specifically for seafarers. Improves safety, productivity, and communication.
+                    <!-- Project Card: SeaMate AI -->
+                    <div class="glassmorphism p-8 rounded-2xl shadow-xl hover:shadow-[0_0_20px_var(--accent-main)] transition-all duration-300 ease-in-out transform hover:-translate-y-3 animate-on-scroll">
+                        <!-- Hypothetical SeaMate AI Logo -->
+                        <img src="https://placehold.co/120x120/0A1128/FFD700?text=SeaMate+AI" alt="SeaMate AI Logo - Smart Assistant for Seafarers" class="w-28 h-28 mx-auto mb-6 rounded-full border-2 border-accent-secondary p-2 object-cover">
+                        <h3 class="text-2xl font-bold text-center mb-4 text-accent-secondary">SeaMate AI</h3>
+                        <p class="text-text-secondary text-center mb-6">
+                            An AI-powered smart assistant app crafted specifically for seafarers to improve safety, productivity, and communication.
                         </p>
                         <div class="text-center">
-                            <button onclick="showProjectDetail('seamate-ai')" class="btn-neon px-6 py-3 text-text-primary font-semibold rounded-lg text-sm">
+                            <button onclick="showProjectDetail('seamate-ai')" class="btn-futuristic text-base">
                                 Learn More
                             </button>
                         </div>
                     </div>
 
-                    <!-- BlueCarbon MVP -->
-                    <div class="glassmorphism p-8 rounded-2xl shadow-xl hover:shadow-teal-accent/30 transition-all duration-300 ease-in-out transform hover:-translate-y-2 animate-on-scroll">
-                        <img src="https://placehold.co/100x100/0A1128/00BFB2?text=BlueCarbon+Logo" alt="BlueCarbon MVP Logo" class="w-24 h-24 mx-auto mb-6 rounded-full border-2 border-accent-teal p-2">
-                        <h3 class="text-2xl font-bold text-center mb-4 text-accent-teal">BlueCarbon MVP</h3>
-                        <p class="text-text-secondary text-center mb-6 text-sm">
-                            Blockchain-based carbon credit platform for maritime sustainability. Enables verifiable and transparent credit trading.
+                    <!-- Project Card: BlueCarbon MVP -->
+                    <div class="glassmorphism p-8 rounded-2xl shadow-xl hover:shadow-[0_0_20px_var(--accent-main)] transition-all duration-300 ease-in-out transform hover:-translate-y-3 animate-on-scroll">
+                        <img src="https://placehold.co/120x120/0A1128/00E6FF?text=Blue+Carbon" alt="BlueCarbon MVP Logo - Blockchain for Maritime Sustainability" class="w-28 h-28 mx-auto mb-6 rounded-full border-2 border-accent-main p-2 object-cover">
+                        <h3 class="text-2xl font-bold text-center mb-4 text-accent-main">BlueCarbon MVP</h3>
+                        <p class="text-text-secondary text-center mb-6">
+                            Blockchain-based carbon credit platform for maritime sustainability. Enables verifiable and transparent operations.
                         </p>
                         <div class="text-center">
-                            <button onclick="showProjectDetail('bluecarbon-mvp')" class="btn-neon px-6 py-3 text-text-primary font-semibold rounded-lg text-sm">
+                            <button onclick="showProjectDetail('bluecarbon-mvp')" class="btn-futuristic text-base">
                                 Learn More
                             </button>
                         </div>
                     </div>
 
                     <!-- Project Card: OceanX AI -->
-                    <div class="glassmorphism p-8 rounded-2xl shadow-xl hover:shadow-teal-accent/30 transition-all duration-300 ease-in-out transform hover:-translate-y-2 animate-on-scroll">
-                        <img src="https://placehold.co/100x100/0A1128/C0C0C0?text=OceanX+AI+Logo" alt="OceanX AI Logo" class="w-24 h-24 mx-auto mb-6 rounded-full border-2 border-accent-silver p-2">
-                        <h3 class="text-2xl font-bold text-center mb-4 text-accent-silver">OceanX AI</h3>
-                        <p class="text-text-secondary text-center mb-6 text-sm">
+                    <div class="glassmorphism p-8 rounded-2xl shadow-xl hover:shadow-[0_0_20px_var(--accent-main)] transition-all duration-300 ease-in-out transform hover:-translate-y-3 animate-on-scroll">
+                        <!-- Hypothetical OceanX AI Logo -->
+                        <img src="https://placehold.co/120x120/0A1128/FFD700?text=OceanX+AI" alt="OceanX AI Logo - Futuristic Maritime Innovation" class="w-28 h-28 mx-auto mb-6 rounded-full border-2 border-accent-secondary p-2 object-cover">
+                        <h3 class="text-2xl font-bold text-center mb-4 text-accent-secondary">OceanX AI</h3>
+                        <p class="text-text-secondary text-center mb-6">
                             Futuristic AI startup for maritime innovation focusing on predictive analytics, crew support, and data intelligence.
                         </p>
                         <div class="text-center">
-                            <button onclick="showProjectDetail('oceanx-ai')" class="btn-neon px-6 py-3 text-text-primary font-semibold rounded-lg text-sm">
+                            <button onclick="showProjectDetail('oceanx-ai')" class="btn-futuristic text-base">
                                 Learn More
                             </button>
                         </div>
                     </div>
 
                     <!-- Project Card: Naavik -->
-                    <div class="glassmorphism p-8 rounded-2xl shadow-xl hover:shadow-teal-accent/30 transition-all duration-300 ease-in-out transform hover:-translate-y-2 animate-on-scroll">
-                        <img src="https://placehold.co/100x100/0A1128/00BFB2?text=Naavik+Logo" alt="Naavik Logo" class="w-24 h-24 mx-auto mb-6 rounded-full border-2 border-accent-teal p-2">
-                        <h3 class="text-2xl font-bold text-center mb-4 text-accent-teal">Naavik</h3>
-                        <p class="text-text-secondary text-center mb-6 text-sm">
+                    <div class="glassmorphism p-8 rounded-2xl shadow-xl hover:shadow-[0_0_20px_var(--accent-main)] transition-all duration-300 ease-in-out transform hover:-translate-y-3 animate-on-scroll">
+                        <img src="naavik.png" alt="Naavik Logo - Edtech Platform for Maritime & Vocational Training" class="w-28 h-28 mx-auto mb-6 rounded-full border-2 border-accent-main p-2 object-cover">
+                        <h3 class="text-2xl font-bold text-center mb-4 text-accent-main">Naavik</h3>
+                        <p class="text-text-secondary text-center mb-6">
                             Community and support platform for seafarers, vocational training, and specialized education focusing on Merchant Navy.
                         </p>
                         <div class="text-center">
-                            <a href="https://naavik.godaddysites.com" target="_blank" rel="noopener noreferrer" class="btn-neon px-6 py-3 text-text-primary font-semibold rounded-lg text-sm">
-                                Visit Website
-                            </a>
+                            <button onclick="showProjectDetail('naavik')" class="btn-futuristic text-base">
+                                Learn More
+                            </button>
                         </div>
-                    </div>
-                </div>
-
-                <!-- Project Detail Sections (Initially hidden) -->
-                <div id="seamate-ai-detail" class="project-detail-section glassmorphism p-10 rounded-2xl shadow-xl mt-20 animate-on-scroll">
-                    <button onclick="hideProjectDetail('seamate-ai')" class="absolute top-4 right-4 text-text-secondary hover:text-accent-teal text-2xl"><i class="fas fa-times"></i></button>
-                    <h3 class="text-3xl font-bold mb-6 text-accent-teal">SeaMate AI - The Siri of the Sea</h3>
-                    <img src="https://placehold.co/800x400/0A1128/C0C0C0?text=SeaMate+AI+App+Mockup" alt="SeaMate AI Hero Image" class="w-full rounded-xl mb-6 border-2 border-accent-silver">
-                    <p class="text-text-secondary leading-relaxed mb-4">
-                        SeaMate AI is an AI-powered smart assistant app crafted specifically for seafarers. Its core purpose is to revolutionize life at sea by improving safety, productivity, and communication.
-                    </p>
-                    <h4 class="text-xl font-semibold mb-3 text-text-primary">Key Features:</h4>
-                    <ul class="list-disc list-inside text-text-secondary mb-4 pl-4">
-                        <li>Voice-based and chatbot interaction for intuitive use.</li>
-                        <li>Task scheduler with reminders for daily shipboard duties.</li>
-                        <li>AI-powered safety compliance checks and alerts.</li>
-                        <li>Crew wellness tracker with multilingual support.</li>
-                        <li>Offline mode for disconnected environments, ensuring continuous operation.</li>
-                        <li>Emergency reporting and comprehensive training module.</li>
-                    </ul>
-                    <h4 class="text-xl font-semibold mb-3 text-text-primary">Tech Stack:</h4>
-                    <p class="text-text-secondary mb-4">
-                        <strong class="text-text-primary">Flutter</strong> (cross-platform app), <strong class="text-text-primary">TensorFlow Lite</strong> (AI for on-device processing), <strong class="text-text-primary">Firebase</strong> (backend services), <strong class="text-text-primary">Python</strong> (backend logic), <strong class="text-text-primary">SQLite</strong> (offline mode).
-                    </p>
-                    <p class="text-text-secondary mb-4"><strong class="text-text-primary">Status:</strong> MVP under testing.</p>
-                    <p class="text-text-secondary mb-6">
-                        <strong class="text-text-primary">Vision:</strong> To be the Siri of the Sea — a digital companion improving every aspect of a seafarer's daily work and safety.
-                    </p>
-                    <div class="text-center mt-8">
-                        <a href="#contact" class="btn-neon px-8 py-4 text-text-primary font-semibold rounded-xl text-lg">Collaborate on SeaMate AI</a>
-                    </div>
-                </div>
-
-                <div id="bluecarbon-mvp-detail" class="project-detail-section glassmorphism p-10 rounded-2xl shadow-xl mt-20 animate-on-scroll">
-                    <button onclick="hideProjectDetail('bluecarbon-mvp')" class="absolute top-4 right-4 text-text-secondary hover:text-accent-teal text-2xl"><i class="fas fa-times"></i></button>
-                    <h3 class="text-3xl font-bold mb-6 text-accent-teal">BlueCarbon MVP - Blockchain for Maritime Sustainability</h3>
-                    <img src="https://placehold.co/800x400/0A1128/00BFB2?text=BlueCarbon+Blockchain+Diagram" alt="BlueCarbon MVP Hero Image" class="w-full rounded-xl mb-6 border-2 border-accent-teal">
-                    <p class="text-text-secondary leading-relaxed mb-4">
-                        BlueCarbon MVP is a blockchain-based carbon credit platform designed to drive maritime sustainability through transparent and verifiable carbon credit operations.
-                    </p>
-                    <h4 class="text-xl font-semibold mb-3 text-text-primary">Key Features:</h4>
-                    <ul class="list-disc list-inside text-text-secondary mb-4 pl-4">
-                        <li>Vessel onboarding and registration for emissions tracking.</li>
-                        <li>Sensor simulation for realistic data generation (roadmap to real sensors).</li>
-                        <li>Carbon project submissions and verification processes.</li>
-                        <li>Secure and transparent credit trading marketplace.</li>
-                    </ul>
-                    <h4 class="text-xl font-semibold mb-3 text-text-primary">Tech Stack:</h4>
-                    <p class="text-text-secondary mb-4">
-                        <strong class="text-text-primary">React</strong> (frontend), <strong class="text-text-primary">Firebase</strong> (backend & database), <strong class="text-text-primary">Simulated Smart Contracts</strong> (current, roadmap to full Web3 blockchain integration).
-                    </p>
-                    <p class="text-text-secondary mb-4"><strong class="text-text-primary">Status:</strong> MVP under development.</p>
-                    <p class="text-text-secondary mb-6">
-                        <strong class="text-text-primary">Vision:</strong> To enable verifiable and transparent carbon credit operations in the maritime industry, incentivizing sustainable practices globally.
-                    </p>
-                    <div class="text-center mt-8">
-                        <a href="#contact" class="btn-neon px-8 py-4 text-text-primary font-semibold rounded-xl text-lg">Discuss BlueCarbon</a>
-                    </div>
-                </div>
-
-                <div id="oceanx-ai-detail" class="project-detail-section glassmorphism p-10 rounded-2xl shadow-xl mt-20 animate-on-scroll">
-                    <button onclick="hideProjectDetail('oceanx-ai')" class="absolute top-4 right-4 text-text-secondary hover:text-accent-teal text-2xl"><i class="fas fa-times"></i></button>
-                    <h3 class="text-3xl font-bold mb-6 text-accent-teal">OceanX AI - Pioneering Maritime AI</h3>
-                    <img src="https://placehold.co/800x400/0A1128/C0C0C0?text=OceanX+AI+Predictive+Analytics" alt="OceanX AI Hero Image" class="w-full rounded-xl mb-6 border-2 border-accent-silver">
-                    <p class="text-text-secondary leading-relaxed mb-4">
-                        OceanX AI is a futuristic AI startup dedicated to pioneering innovation within the maritime sector. We leverage advanced artificial intelligence to solve complex challenges and create intelligent solutions for the industry.
-                    </p>
-                    <h4 class="text-xl font-semibold mb-3 text-text-primary">Focus Areas:</h4>
-                    <ul class="list-disc list-inside text-text-secondary mb-4 pl-4">
-                        <li>Predictive analytics for optimized fleet maintenance and reduced downtime.</li>
-                        <li>Advanced crew support systems for enhanced well-being and performance.</li>
-                        <li>Comprehensive data intelligence for strategic decision-making.</li>
-                    </ul>
-                    <h4 class="text-xl font-semibold mb-3 text-text-primary">Tech Stack:</h4>
-                    <p class="text-text-secondary mb-4">
-                        Focus on scalable cloud AI platforms, machine learning frameworks (e.g., <strong class="text-text-primary">PyTorch, TensorFlow</strong>), big data technologies, and robust API integrations.
-                    </p>
-                    <p class="text-text-secondary mb-4"><strong class="text-text-primary">Status:</strong> Currently in Research & Development (R&D) phase, actively exploring cutting-edge AI applications.</p>
-                    <p class="text-text-secondary mb-6">
-                        <strong class="text-text-primary">Vision:</strong> To build the future of maritime AI, leading to smarter, safer, and more sustainable operations across the global shipping industry.
-                    </p>
-                    <div class="text-center mt-8">
-                        <a href="#contact" class="btn-neon px-8 py-4 text-text-primary font-semibold rounded-xl text-lg">Partner with OceanX AI</a>
-                    </div>
-                </div>
-
-                <!-- Project Detail Section: Naavik -->
-                <div id="naavik-detail" class="project-detail-section glassmorphism p-10 rounded-2xl shadow-xl mt-20 animate-on-scroll">
-                    <button onclick="hideProjectDetail('naavik')" class="absolute top-4 right-4 text-text-secondary hover:text-accent-teal text-2xl"><i class="fas fa-times"></i></button>
-                    <h3 class="text-3xl font-bold mb-6 text-accent-teal">Naavik: Edtech Platform for Maritime & Vocational Training</h3>
-                    <img src="https://placehold.co/800x400/0A1128/00BFB2?text=Naavik+Online+Learning" alt="Naavik Platform Overview Image" class="w-full rounded-xl mb-6 border-2 border-accent-teal">
-
-                    <p class="text-text-secondary leading-relaxed mb-4">
-                        Naavik is an edtech platform primarily focused on career counseling, vocational training, and specialized education, with a significant emphasis on the Merchant Navy sector. Our mission is to empower students and individuals by equipping them with industry-oriented skills and awareness to foster successful careers. Naavik is recognized as an "edtech platform providing industry oriented marketing training & internship programs and provides career counselling awareness seminars and webinars on merchant navy."
-                    </p>
-
-                    <h4 class="text-2xl font-semibold mb-3 text-text-primary">Our Core Programs & Offerings:</h4>
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-                        <div class="glassmorphism p-6 rounded-xl border border-border-glass">
-                            <img src="https://placehold.co/150x100/0A1128/C0C0C0?text=Merchant+Navy+Guidance" alt="Merchant Navy Counseling" class="w-full h-auto rounded-lg mb-4">
-                            <h5 class="text-xl font-semibold text-accent-teal mb-2">Merchant Navy Career Counselling & Awareness</h5>
-                            <p class="text-text-secondary text-sm">
-                                Educating senior secondary students (grades 9-12) about career pathways within the Merchant Navy through structured sessions and webinars. Proactive early career guidance for formative development.
-                            </p>
-                        </div>
-                        <div class="glassmorphism p-6 rounded-xl border border-border-glass">
-                            <img src="https://placehold.co/150x100/0A1128/00BFB2?text=Digital+Marketing+Course" alt="Marketing Training" class="w-full h-auto rounded-lg mb-4">
-                            <h5 class="text-xl font-semibold text-accent-teal mb-2">Marketing Training & Internship Program</h5>
-                            <p class="text-text-secondary text-sm">
-                                Comprehensive online training by industrial experts, practical experience via live and capstone projects, and valuable letters of recommendation. Aimed at framing "PI-SHAPED PROFESSIONALS" with dual certification.
-                            </p>
-                        </div>
-                        <div class="glassmorphism p-6 rounded-xl border border-border-glass">
-                            <img src="https://placehold.co/150x100/0A1128/C0C0C0?text=Office+Skills" alt="Vocational Courses" class="w-full h-auto rounded-lg mb-4">
-                            <h5 class="text-xl font-semibold text-accent-teal mb-2">Vocational Courses</h5>
-                            <p class="text-text-secondary text-sm">
-                                Detailed courses in Office Management, Shorthand/Stenography, and Typing. Focuses on skill development, workplace preparation, and enhancing job opportunities for career improvement.
-                            </p>
-                        </div>
-                        <div class="glassmorphism p-6 rounded-xl border border-border-glass">
-                            <img src="https://placehold.co/150x100/0A1128/00BFB2?text=Maritime+Education" alt="Special Education Services" class="w-full h-auto rounded-lg mb-4">
-                            <h5 class="text-xl font-semibold text-accent-teal mb-2">Inclusive Special Education Services</h5>
-                            <p class="text-text-secondary text-sm">
-                                Niche offering including IMUCET preparation and GP Rating Familiarisation Courses. Maritime professionals develop individualized education plans, providing tailored support within the maritime domain.
-                            </p>
-                        </div>
-                    </div>
-
-                    <p class="text-text-secondary leading-relaxed mb-6">
-                        Naavik emphasizes practical, industry-oriented skills across all programs, recognizing the gap between traditional education and modern job market demands. This focus ensures graduates are immediately employable and competitive.
-                    </p>
-
-                    <h4 class="text-2xl font-semibold mb-3 text-text-primary">Website & User Experience:</h4>
-                    <p class="text-text-secondary leading-relaxed mb-4">
-                        The Naavik website features a clear, straightforward structure with a prominent navigation bar. Content is organized into distinct, visually categorized sections, enhancing navigability and information retrieval. The design prioritizes readability and functionality, utilizing a professional blue and white color scheme for a trustworthy impression.
-                    </p>
-
-                    <h4 class="text-2xl font-semibold mb-3 text-text-primary">Digital Ecosystem & Contact:</h4>
-                    <p class="text-text-secondary leading-relaxed mb-4">
-                        Naavik's digital ecosystem includes direct WhatsApp messaging for real-time engagement and social media links for broader reach. An email newsletter signup offers a 10% discount on first purchases. For direct inquiries, contact via phone at <a href="tel:+919653641933" class="hover:underline text-accent-teal">+91-9653641933</a> or <a href="tel:+919120265493" class="hover:underline text-accent-teal">+91-9120265493</a>, or email at <a href="mailto:Officialnaavik@gmail.com" class="hover:underline text-accent-teal">Officialnaavik@gmail.com</a>. Our physical location is in New Delhi, India.
-                    </p>
-
-                    <h4 class="text-2xl font-semibold mb-3 text-text-primary">Target Audience:</h4>
-                    <ul class="list-disc list-inside text-text-secondary mb-6 pl-4">
-                        <li>Senior secondary students (grades 9-12) for Merchant Navy career counseling.</li>
-                        <li>Individuals seeking industry-oriented marketing training and internships.</li>
-                        <li>Anyone looking to acquire vocational skills (Office Management, Shorthand, Typing).</li>
-                        <li>Students aspiring to enter the merchant navy and needing guidance for exams (IMUCET, GP Rating).</li>
-                    </ul>
-
-                    <div class="text-center mt-8">
-                        <a href="https://naavik.godaddysites.com" target="_blank" rel="noopener noreferrer" class="btn-neon px-8 py-4 text-text-primary font-semibold rounded-xl text-lg">Visit Naavik Website</a>
                     </div>
                 </div>
             </div>
         </section>
+
+        <!-- Project Detail Overlays (Hidden by default) -->
+        <!-- SeaMate AI Detail -->
+        <div id="seamate-ai-detail-overlay" class="project-detail-overlay project-detail-section">
+            <div class="project-detail-content">
+                <button onclick="hideProjectDetail('seamate-ai')" class="close-button" aria-label="Close Project Details"><i class="fas fa-times"></i></button>
+                <h3 class="text-3xl md:text-4xl font-bold mb-6 text-accent-main">SeaMate AI - The Siri of the Sea</h3>
+                <img src="https://placehold.co/900x500/0A1128/FFD700?text=SeaMate+AI+MVP" alt="SeaMate AI app interface mockup showing voice assistant" class="w-full rounded-xl mb-6 border-2 border-accent-secondary object-cover">
+                <p class="text-text-secondary leading-relaxed mb-4 text-lg">
+                    SeaMate AI is an innovative, AI-powered smart assistant app meticulously crafted to serve the unique needs of seafarers. Its core purpose is to revolutionize life at sea by significantly enhancing safety protocols, boosting on-board productivity, and streamlining communication channels for a more connected and efficient maritime environment.
+                </p>
+                <h4 class="text-xl md:text-2xl font-semibold mb-3 text-text-primary mt-6">Key Features:</h4>
+                <ul class="list-disc list-inside text-text-secondary mb-4 pl-4 text-lg space-y-2">
+                    <li><strong class="text-text-primary">Intuitive Interaction:</strong> Seamless voice-based commands and a responsive chatbot interface for natural user engagement.</li>
+                    <li><strong class="text-text-primary">Dynamic Task Management:</strong> An advanced task scheduler complete with smart reminders for daily shipboard duties, ensuring no critical operation is missed.</li>
+                    <li><strong class="text-text-primary">Proactive Safety Compliance:</strong> AI-powered checks that monitor safety regulations and provide real-time alerts for potential non-compliance, enhancing on-board safety.</li>
+                    <li><strong class="text-text-primary">Holistic Crew Wellness:</strong> A comprehensive crew wellness tracker, actively promoting mental and physical well-being, with robust multilingual support for a diverse crew.</li>
+                    <li><strong class="text-text-primary">Uninterrupted Operation:</strong> A critical offline mode ensuring full functionality and data access even in disconnected or remote maritime environments.</li>
+                    <li><strong class="text-text-primary">Emergency Response & Training:</strong> Streamlined emergency reporting features and an extensive training module to prepare seafarers for various scenarios.</li>
+                </ul>
+                <h4 class="text-xl md:text-2xl font-semibold mb-3 text-text-primary mt-6">Tech Stack:</h4>
+                <p class="text-text-secondary mb-4 text-lg">
+                    <strong class="text-text-primary">Frontend:</strong> <span class="text-accent-secondary">Flutter</span> (for a beautiful, cross-platform mobile application).<br>
+                    <strong class="text-text-primary">AI/ML:</strong> <span class="text-accent-secondary">TensorFlow Lite</span> (enabling efficient on-device AI processing for speed and offline capability).<br>
+                    <strong class="text-text-primary">Backend & Database:</strong> <span class="text-accent-secondary">Firebase</span> (scalable backend services for data storage, authentication, and real-time updates).<br>
+                    <strong class="text-text-primary">Core Logic:</strong> <span class="text-accent-secondary">Python</span> (for robust backend logic and AI model development).<br>
+                    <strong class="text-text-primary">Offline Storage:</strong> <span class="text-accent-secondary">SQLite</span> (for reliable local data storage when internet connectivity is limited).
+                </p>
+                <p class="text-text-secondary mb-4 text-lg"><strong class="text-text-primary">Status:</strong> MVP under rigorous testing and refinement, with ongoing user feedback integration.</p>
+                <p class="text-text-secondary mb-6 text-lg">
+                    <strong class="text-text-primary">Vision:</strong> Our ultimate goal is for SeaMate AI to evolve into the definitive <span class="text-accent-main font-bold">"Siri of the Sea"</span> — a truly indispensable digital companion that intuitively improves every facet of a seafarer's daily work life and significantly enhances safety standards across the global maritime industry.
+                </p>
+                <div class="text-center mt-8">
+                    <a href="#contact" class="btn-futuristic text-lg">Collaborate on SeaMate AI</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- BlueCarbon MVP Detail -->
+        <div id="bluecarbon-mvp-detail-overlay" class="project-detail-overlay project-detail-section">
+            <div class="project-detail-content">
+                <button onclick="hideProjectDetail('bluecarbon-mvp')" class="close-button" aria-label="Close Project Details"><i class="fas fa-times"></i></button>
+                <h3 class="text-3xl md:text-4xl font-bold mb-6 text-accent-main">BlueCarbon MVP - Blockchain for Maritime Sustainability</h3>
+                <img src="https://placehold.co/900x500/0A1128/00E6FF?text=BlueCarbon+MVP" alt="BlueCarbon platform diagram showing blockchain integration" class="w-full rounded-xl mb-6 border-2 border-accent-main object-cover">
+                <p class="text-text-secondary leading-relaxed mb-4 text-lg">
+                    BlueCarbon MVP is a pioneering blockchain-based carbon credit platform meticulously designed to drive genuine maritime sustainability. Our objective is to establish a verifiable and transparent ecosystem for carbon credit operations within the shipping industry, fostering a new era of environmental accountability.
+                </p>
+                <h4 class="text-xl md:text-2xl font-semibold mb-3 text-text-primary mt-6">Key Features:</h4>
+                <ul class="list-disc list-inside text-text-secondary mb-4 pl-4 text-lg space-y-2">
+                    <li><strong class="text-text-primary">Seamless Vessel Onboarding:</strong> A streamlined process for registering vessels and integrating their emissions tracking data onto the platform.</li>
+                    <li><strong class="text-text-primary">Robust Sensor Simulation:</strong> Advanced simulation capabilities for generating realistic data, laying the groundwork for future integration with actual on-vessel sensors.</li>
+                    <li><strong class="text-text-primary">Transparent Carbon Project Submissions:</strong> A clear and secure mechanism for submitting and verifying carbon reduction projects.</li>
+                    <li><strong class="text-text-primary">Secure Credit Trading Marketplace:</strong> A reliable and transparent marketplace for the issuance, trading, and retirement of verifiable carbon credits.</li>
+                </ul>
+                <h4 class="text-xl md:text-2xl font-semibold mb-3 text-text-primary mt-6">Tech Stack:</h4>
+                <p class="text-text-secondary mb-4 text-lg">
+                    <strong class="text-text-primary">Frontend:</strong> <span class="text-accent-main">React</span> (for a dynamic and intuitive user interface).<br>
+                    <strong class="text-text-primary">Backend & Database:</strong> <span class="text-accent-main">Firebase</span> (providing scalable backend services for data management and user authentication).<br>
+                    <strong class="text-text-primary">Blockchain Logic:</strong> <span class="text-accent-main">Simulated Smart Contracts</span> (current implementation, with a clear roadmap towards full Web3 blockchain integration for decentralized operations).
+                </p>
+                <p class="text-text-secondary mb-4 text-lg"><strong class="text-text-primary">Status:</strong> MVP currently under active development, focusing on core functionality and user experience.</p>
+                <p class="text-text-secondary mb-6 text-lg">
+                    <strong class="text-text-primary">Vision:</strong> Our ambition is to become the leading platform enabling truly verifiable and transparent carbon credit operations within the maritime industry, creating powerful incentives for global sustainable shipping practices.
+                </p>
+                <div class="text-center mt-8">
+                    <a href="#contact" class="btn-futuristic text-lg">Discuss BlueCarbon Project</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- OceanX AI Detail -->
+        <div id="oceanx-ai-detail-overlay" class="project-detail-overlay project-detail-section">
+            <div class="project-detail-content">
+                <button onclick="hideProjectDetail('oceanx-ai')" class="close-button" aria-label="Close Project Details"><i class="fas fa-times"></i></button>
+                <h3 class="text-3xl md:text-4xl font-bold mb-6 text-accent-main">OceanX AI - Pioneering Maritime AI</h3>
+                <img src="https://placehold.co/900x500/0A1128/FFD700?text=OceanX+AI+Analytics+Dashboard" alt="OceanX AI Dashboard showing predictive fleet analytics" class="w-full rounded-xl mb-6 border-2 border-accent-secondary object-cover">
+                <p class="text-text-secondary leading-relaxed mb-4 text-lg">
+                    OceanX AI is a visionary AI startup dedicated to pioneering groundbreaking innovation within the maritime sector. We are committed to harnessing the power of advanced Artificial Intelligence to solve complex challenges, drive efficiency, and create intelligent solutions that redefine the future of maritime operations.
+                </p>
+                <h4 class="text-xl md:text-2xl font-semibold mb-3 text-text-primary mt-6">Focus Areas:</h4>
+                <ul class="list-disc list-inside text-text-secondary mb-4 pl-4 text-lg space-y-2">
+                    <li><strong class="text-text-primary">Predictive Analytics for Fleet Maintenance:</strong> Implementing sophisticated AI models to forecast equipment failures, optimize maintenance schedules, and significantly reduce vessel downtime.</li>
+                    <li><strong class="text-text-primary">Advanced Crew Support Systems:</strong> Developing intelligent systems that enhance seafarer well-being, provide on-demand operational assistance, and improve overall crew performance.</li>
+                    <li><strong class="text-text-primary">Comprehensive Data Intelligence:</strong> Transforming vast maritime datasets into actionable insights, enabling smarter strategic decision-making and operational excellence.</li>
+                </ul>
+                <h4 class="text-xl md:text-2xl font-semibold mb-3 text-text-primary mt-6">Tech Stack (Core Technologies):</h4>
+                <p class="text-text-secondary mb-4 text-lg">
+                    Our foundation is built upon scalable cloud AI platforms, utilizing leading machine learning frameworks such as <strong class="text-text-primary">PyTorch</strong> and <strong class="text-text-primary">TensorFlow</strong>. We leverage advanced big data technologies for processing vast amounts of maritime data and ensure robust API integrations for seamless system interoperability.
+                </p>
+                <p class="text-text-secondary mb-4 text-lg"><strong class="text-text-primary">Status:</strong> Currently in an active Research & Development (R&D) phase, diligently exploring and implementing cutting-edge AI applications to address critical maritime challenges.</p>
+                <p class="text-text-secondary mb-6 text-lg">
+                    <strong class="text-text-primary">Vision:</strong> OceanX AI aims to be at the forefront of building the future of maritime AI, leading to significantly smarter, safer, and more sustainable operations across the global shipping industry.
+                </p>
+                <div class="text-center mt-8">
+                    <a href="#contact" class="btn-futuristic text-lg">Partner with OceanX AI</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Naavik Detail -->
+        <div id="naavik-detail-overlay" class="project-detail-overlay project-detail-section">
+            <div class="project-detail-content">
+                <button onclick="hideProjectDetail('naavik')" class="close-button" aria-label="Close Project Details"><i class="fas fa-times"></i></button>
+                <h3 class="text-3xl md:text-4xl font-bold mb-6 text-accent-main">Naavik: Pioneering Edtech for Maritime & Vocational Excellence</h3>
+                <img src="naavik.png" alt="Naavik Online Learning Platform Interface" class="w-full rounded-xl mb-6 border-2 border-accent-main object-cover">
+
+                <p class="text-text-secondary leading-relaxed mb-4 text-lg">
+                    Naavik operates as a dynamic edtech platform primarily focused on comprehensive career counseling, vocational training, and specialized education, with a significant emphasis on empowering individuals for successful careers in the Merchant Navy sector and beyond. Our digital presence serves as the central hub for disseminating information about our diverse programs and engaging with prospective students.
+                </p>
+
+                <h4 class="text-2xl md:text-3xl font-semibold mb-3 text-text-primary mt-6">Our Core Programs & Offerings:</h4>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                    <div class="glassmorphism p-6 rounded-xl border border-border-light">
+                        <img src="VGF.jpeg" alt="Merchant Navy Career Counseling Session" class="w-full h-auto rounded-lg mb-4 object-cover">
+                        <h5 class="text-xl font-semibold text-accent-main mb-2">Merchant Navy Career Counselling & Awareness</h5>
+                        <p class="text-text-secondary text-sm">
+                            Specifically designed to educate senior secondary students (grades 9-12) about viable career pathways within the Merchant Navy, delivered through structured interactive sessions and informative webinars. This offers proactive guidance at a formative stage.
+                        </p>
+                    </div>
+                    <div class="glassmorphism p-6 rounded-xl border border-border-light">
+                        <img src="mti.png" alt="Students in a Digital Marketing Class" class="w-full h-auto rounded-lg mb-4 object-cover">
+                        <h5 class="text-xl font-semibold text-accent-main mb-2">Marketing Training & Internship Program</h5>
+                        <p class="text-text-secondary text-sm">
+                            A comprehensive program offering online training led by distinguished industrial experts, providing invaluable practical experience through live and capstone projects directly with NAAVIK. Participants earn dual certification (completion and internship) and valuable letters of recommendation. We explicitly aim at framing "PI-SHAPED PROFESSIONALS".
+                        </p>
+                    </div>
+                    <div class="glassmorphism p-6 rounded-xl border border-border-light">
+                        <img src="vc.png" alt="Office Management Training Session" class="w-full h-auto rounded-lg mb-4 object-cover">
+                        <h5 class="text-xl font-semibold text-accent-main mb-2">Vocational Courses</h5>
+                        <p class="text-text-secondary text-sm">
+                            Provides detailed, practical courses in Office Management, Shorthand/Stenography, and Typing. Our focus is on tangible skill development, workplace preparation, increasing job opportunities, career improvement, CV enhancement, and essential soft skill development.
+                        </p>
+                    </div>
+                    <div class="glassmorphism p-6 rounded-xl border border-border-light">
+                        <img src="mw.png" alt="Maritime Students in a Classroom" class="w-full h-auto rounded-lg mb-4 object-cover">
+                        <h5 class="text-xl font-semibold text-accent-main mb-2">Inclusive Special Education Services</h5>
+                        <p class="text-text-secondary text-sm">
+                            A highly specialized offering that includes intensive IMUCET preparation batches and practical GP Rating Familiarisation Courses. A unique aspect is the direct involvement of experienced maritime professionals who work with students to develop individualized education plans, ensuring tailored support within the maritime domain.
+                        </p>
+                    </div>
+                </div>
+
+                <p class="text-text-secondary leading-relaxed mb-6 text-lg">
+                    Naavik consistently emphasizes practical, industry-oriented skills across all its programs. This robust focus recognizes the existing gap between traditional academic education and the dynamic demands of the modern job market, ensuring our graduates are immediately employable and highly competitive.
+                </p>
+
+                <h4 class="text-2xl md:text-3xl font-semibold mb-3 text-text-primary mt-6">Website & User Experience Overview:</h4>
+                <p class="text-text-secondary leading-relaxed mb-4 text-lg">
+                    The Naavik website features a clear, intuitive, and straightforward structure, significantly contributing to its ease of use. A prominent main navigation bar ensures simple access to key sections. Content is thoughtfully organized into distinct, visually categorized sections, each clearly marked by a heading and an accompanying image, which dramatically enhances overall navigability and efficient information retrieval. The visual design is clean and highly functional, employing a simple yet professional layout that prioritizes readability. The professional blue and white color scheme contributes to a calm and trustworthy impression, which is ideal for an educational platform. The overall user experience is streamlined, enabling visitors to effortlessly locate information about the diverse services offered. Readability is excellent due to the careful selection of clear fonts and ample white space, ensuring that text is easy to consume.
+                </p>
+
+                <h4 class="text-2xl md:text-3xl font-semibold mb-3 text-text-primary mt-6">Digital Ecosystem & Contact:</h4>
+                <p class="text-text-secondary leading-relaxed mb-4 text-lg">
+                    Naavik's digital ecosystem is designed for maximum user engagement and accessibility. The site prominently features a direct WhatsApp messaging link, facilitating immediate and convenient real-time communication. Robust social media links are also integrated, extending our reach and fostering community engagement beyond the website itself. An opt-in email signup option for our newsletter is available, offering a compelling 10% discount on the first purchase as an incentive for new users. For direct inquiries, we offer multiple accessible contact methods: phone calls at <a href="tel:+919653641933" class="hover:underline text-accent-main">+91-9653641933</a> or <a href="tel:+919120265493" class="hover:underline text-accent-main">+91-9120265493</a>, or direct email to <a href="mailto:Officialnaavik@gmail.com" class="hover:underline text-accent-main">Officialnaavik@gmail.com</a>. Our primary operational base is located in New Delhi, India.
+                </p>
+
+                <h4 class="text-2xl md:text-3xl font-semibold mb-3 text-text-primary mt-6">Target Audience:</h4>
+                <ul class="list-disc list-inside text-text-secondary mb-6 pl-4 text-lg space-y-1">
+                    <li>Senior secondary students (grades 9-12) seeking comprehensive Merchant Navy career counseling.</li>
+                    <li>Individuals, including college students and young professionals, looking for industry-oriented marketing training and practical internships.</li>
+                    <li>Anyone aspiring to acquire essential vocational skills in fields such as Office Management, Shorthand/Stenography, and Typing.</li>
+                    <li>Dedicated students aiming to enter the merchant navy and requiring specialized guidance and preparation for critical exams like IMUCET and GP Rating.</li>
+                </ul>
+
+                <div class="text-center mt-8">
+                    <a href="https://naavik.godaddysites.com" target="_blank" rel="noopener noreferrer" class="btn-futuristic text-lg">Visit Naavik Website</a>
+                </div>
+            </div>
+        </div>
+
 
         <!-- Publications Page -->
         <section id="publications" class="py-20 bg-background-secondary">
@@ -798,45 +985,45 @@
                 <h2 class="text-4xl font-bold text-center mb-16 neon-glow animate-on-scroll">Publications & Research</h2>
 
                 <p class="text-center text-lg text-text-secondary mb-12 max-w-3xl mx-auto animate-on-scroll">
-                    My commitment extends to contributing to maritime knowledge through insightful books and impactful research, aiming to drive dialogue and innovation.
+                    My commitment extends to contributing to maritime knowledge through insightful books and impactful research, aiming to drive dialogue and innovation and shape the future of the industry.
                 </p>
 
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-10 mb-20">
                     <!-- Books -->
                     <div class="glassmorphism p-8 rounded-2xl shadow-xl animate-on-scroll">
-                        <h3 class="text-3xl font-semibold mb-6 text-accent-teal text-center">Books</h3>
+                        <h3 class="text-3xl font-semibold mb-6 text-accent-main text-center">Books</h3>
                         <div class="space-y-8">
                             <!-- Book 1: Naavik -->
-                            <div class="flex flex-col sm:flex-row items-center space-x-6 bg-background-primary/50 p-6 rounded-xl border border-border-glass">
-                                <img src="https://placehold.co/100x150/0A1128/C0C0C0?text=Naavik+Book+Cover" alt="Naavik Book Cover" class="w-24 h-auto rounded-lg shadow-md mb-4 sm:mb-0">
+                            <div class="flex flex-col sm:flex-row items-center space-x-6 bg-background-primary/50 p-6 rounded-xl border border-border-light">
+                                <img src="book.png" alt="Naavik Book Cover - A Seafarer's Journey" class="w-28 h-auto rounded-lg shadow-md mb-4 sm:mb-0 object-cover">
                                 <div>
                                     <h4 class="text-xl font-bold text-text-primary mb-2">Naavik – A Seafarer’s Journey and Maritime Reflections</h4>
                                     <p class="text-text-secondary text-sm mb-3">
-                                        An introspective look at the life of a seafarer, blending personal experiences with broader reflections on the maritime world.
+                                        An introspective and compelling look at the life of a seafarer, seamlessly blending personal experiences with broader reflections on the intricate maritime world.
                                     </p>
                                     <div class="flex flex-wrap gap-3">
-                                        <a href="https://notionpress.com/read/naavik?utm_source=share_publish_email&utm_medium=whatsapp" target="_blank" rel="noopener noreferrer" class="btn-neon px-4 py-2 text-text-primary font-semibold rounded-lg text-xs">
+                                        <a href="https://notionpress.com/read/naavik?utm_source=share_publish_email&utm_medium=whatsapp" target="_blank" rel="noopener noreferrer" class="btn-futuristic text-xs px-4 py-2">
                                             <i class="fas fa-book-reader mr-1"></i> Read Online
                                         </a>
-                                        <a href="https://notionpress.com/read/naavik?utm_source=share_publish_email&utm_medium=whatsapp" target="_blank" rel="noopener noreferrer" class="btn-neon px-4 py-2 text-text-primary font-semibold rounded-lg text-xs">
+                                        <a href="https://notionpress.com/read/naavik?utm_source=share_publish_email&utm_medium=whatsapp" target="_blank" rel="noopener noreferrer" class="btn-futuristic text-xs px-4 py-2">
                                             <i class="fas fa-shopping-cart mr-1"></i> Buy Now
                                         </a>
                                     </div>
                                 </div>
                             </div>
                             <!-- Book 2: Shipping Towards Automation -->
-                            <div class="flex flex-col sm:flex-row items-center space-x-6 bg-background-primary/50 p-6 rounded-xl border border-border-glass">
-                                <img src="https://placehold.co/100x150/0A1128/00BFB2?text=Shipping+Automation+Cover" alt="Shipping Towards Automation Book Cover" class="w-24 h-auto rounded-lg shadow-md mb-4 sm:mb-0">
+                            <div class="flex flex-col sm:flex-row items-center space-x-6 bg-background-primary/50 p-6 rounded-xl border border-border-light">
+                                <img src="sto.png" alt="Shipping Towards Automation Book Cover" class="w-28 h-auto rounded-lg shadow-md mb-4 sm:mb-0 object-cover">
                                 <div>
                                     <h4 class="text-xl font-bold text-text-primary mb-2">Shipping Towards Automation – A Deep Dive into Maritime Logistics</h4>
                                     <p class="text-text-secondary text-sm mb-3">
-                                        A comprehensive analysis of the transformative impact of automation on modern maritime logistics and future outlooks.
+                                        A comprehensive and insightful analysis of the transformative impact of automation on modern maritime logistics, exploring current trends and future outlooks.
                                     </p>
                                     <div class="flex flex-wrap gap-3">
-                                        <a href="https://www.elivabooks.com/en/book/book-1490692779" target="_blank" rel="noopener noreferrer" class="btn-neon px-4 py-2 text-text-primary font-semibold rounded-lg text-xs">
+                                        <a href="https://www.elivabooks.com/en/book/book-1490692779" target="_blank" rel="noopener noreferrer" class="btn-futuristic text-xs px-4 py-2">
                                             <i class="fas fa-book-reader mr-1"></i> Read Online
                                         </a>
-                                        <a href="https://www.elivabooks.com/en/book/book-1490692779" target="_blank" rel="noopener noreferrer" class="btn-neon px-4 py-2 text-text-primary font-semibold rounded-lg text-xs">
+                                        <a href="https://www.elivabooks.com/en/book/book-1490692779" target="_blank" rel="noopener noreferrer" class="btn-futuristic text-xs px-4 py-2">
                                             <i class="fas fa-shopping-cart mr-1"></i> Buy Now
                                         </a>
                                     </div>
@@ -847,36 +1034,36 @@
 
                     <!-- Research Papers -->
                     <div class="glassmorphism p-8 rounded-2xl shadow-xl animate-on-scroll">
-                        <h3 class="text-3xl font-semibold mb-6 text-accent-teal text-center">Research Papers</h3>
+                        <h3 class="text-3xl font-semibold mb-6 text-accent-main text-center">Research Papers</h3>
                         <div class="space-y-8">
                             <!-- Research Paper 1: Smart Safety Helmet -->
-                            <div class="bg-background-primary/50 p-6 rounded-xl border border-border-glass">
+                            <div class="bg-background-primary/50 p-6 rounded-xl border border-border-light">
                                 <h4 class="text-xl font-bold text-text-primary mb-2">Smart Safety Helmet for Seafarers</h4>
                                 <p class="text-text-secondary text-sm mb-2"><strong class="text-text-primary">Published in:</strong> Journal of Maritime Research (JMR)</p>
                                 <p class="text-text-secondary text-sm mb-3">
-                                    Summary: This paper explores the application of smart sensors and AI to monitor seafarer safety conditions onboard in real-time, enhancing proactive risk management.
+                                    Summary: This paper explores the innovative application of smart sensors and advanced AI to monitor seafarer safety conditions onboard in real-time, significantly enhancing proactive risk management.
                                 </p>
                                 <div class="flex flex-wrap gap-3">
-                                    <a href="https://www.jmr.unican.es/index.php/jmr/article/view/742" target="_blank" rel="noopener noreferrer" class="btn-neon px-4 py-2 text-text-primary font-semibold rounded-lg text-xs">
+                                    <a href="https://www.jmr.unican.es/index.php/jmr/article/view/742" target="_blank" rel="noopener noreferrer" class="btn-futuristic text-xs px-4 py-2">
                                         <i class="fas fa-file-alt mr-1"></i> Read Online
                                     </a>
-                                    <a href="https://www.jmr.unican.es/index.php/jmr/article/view/742" target="_blank" rel="noopener noreferrer" class="btn-neon px-4 py-2 text-text-primary font-semibold rounded-lg text-xs">
+                                    <a href="https://www.jmr.unican.es/index.php/jmr/article/view/742" target="_blank" rel="noopener noreferrer" class="btn-futuristic text-xs px-4 py-2">
                                         <i class="fas fa-download mr-1"></i> Download PDF
                                     </a>
                                 </div>
                             </div>
                             <!-- Placeholder for other papers -->
-                            <div class="bg-background-primary/50 p-6 rounded-xl border border-border-glass">
+                            <div class="bg-background-primary/50 p-6 rounded-xl border border-border-light">
                                 <h4 class="text-xl font-bold text-text-primary mb-2">Maritime AI for Predictive Maintenance</h4>
                                 <p class="text-text-secondary text-sm mb-2"><strong class="text-text-primary">Published in:</strong> International Journal of Naval Architecture</p>
                                 <p class="text-text-secondary text-sm mb-3">
-                                    Summary: A study on leveraging AI and machine learning models for predicting equipment failures in maritime vessels, optimizing maintenance schedules.
+                                    Summary: A comprehensive study on leveraging advanced AI and machine learning models for predicting equipment failures in maritime vessels, thereby optimizing maintenance schedules and reducing operational downtime.
                                 </p>
                                 <div class="flex flex-wrap gap-3">
-                                    <button class="btn-neon px-4 py-2 text-text-primary font-semibold rounded-lg text-xs">
+                                    <button class="btn-futuristic text-xs px-4 py-2">
                                         <i class="fas fa-file-alt mr-1"></i> Read Abstract
                                     </button>
-                                    <button class="btn-neon px-4 py-2 text-text-primary font-semibold rounded-lg text-xs">
+                                    <button class="btn-futuristic text-xs px-4 py-2">
                                         <i class="fas fa-download mr-1"></i> Download PDF
                                     </button>
                                 </div>
@@ -892,50 +1079,96 @@
             <div class="container mx-auto px-4">
                 <h2 class="text-4xl font-bold text-center mb-16 neon-glow animate-on-scroll">Book My Events</h2>
                 <div class="glassmorphism p-8 rounded-2xl shadow-xl animate-on-scroll max-w-4xl mx-auto">
-                    <h3 class="text-3xl font-semibold mb-6 text-accent-teal text-center">Empowering Through Knowledge & Innovation</h3>
+                    <h3 class="text-3xl font-semibold mb-6 text-accent-main text-center">Empowering Through Knowledge & Innovation</h3>
                     <p class="text-text-secondary leading-relaxed mb-6 text-lg text-center">
                         With extensive experience in maritime, AI, and innovation, I am passionate about sharing knowledge and inspiring the next generation. I offer engaging seminars and webinars tailored for educational institutions and relevant organizations.
                     </p>
-                    <div class="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-8 mb-8">
-                        <div class="text-center">
-                            <i class="fas fa-users text-5xl text-accent-teal mb-2"></i>
-                            <p class="text-text-primary text-3xl font-bold">10,000+</p>
-                            <p class="text-text-secondary">Students Mentored</p>
+                    <div class="flex flex-col sm:flex-row justify-center items-center space-y-6 sm:space-y-0 sm:space-x-8 mb-12">
+                        <div class="stats-item">
+                            <i class="fas fa-users" aria-hidden="true"></i>
+                            <span class="value">10,000+</span>
+                            <span class="label">Students Mentored</span>
                         </div>
-                        <div class="text-center">
-                            <i class="fas fa-microphone-alt text-5xl text-accent-teal mb-2"></i>
-                            <p class="text-text-primary text-3xl font-bold">100+</p>
-                            <p class="text-text-secondary">Seminars Conducted</p>
+                        <div class="stats-item">
+                            <i class="fas fa-microphone-alt" aria-hidden="true"></i>
+                            <span class="value">100+</span>
+                            <span class="label">Seminars Conducted</span>
                         </div>
-                        <div class="text-center">
-                            <i class="fas fa-video text-5xl text-accent-teal mb-2"></i>
-                            <p class="text-text-primary text-3xl font-bold">50+</p>
-                            <p class="text-text-secondary">Webinars Hosted</p>
+                        <div class="stats-item">
+                            <i class="fas fa-video" aria-hidden="true"></i>
+                            <span class="value">50+</span>
+                            <span class="label">Webinars Hosted</span>
                         </div>
                     </div>
 
-                    <h4 class="text-2xl font-semibold mb-4 text-accent-teal text-center">Topics & Expertise:</h4>
-                    <ul class="list-disc list-inside text-text-secondary mb-8 pl-4 grid grid-cols-1 md:grid-cols-2 gap-y-2">
-                        <li>The Future of Maritime: AI, Blockchain & Digitalization</li>
-                        <li>Career Pathways in the Merchant Navy & Beyond</li>
-                        <li>Building a Tech Startup: From Idea to MVP</li>
-                        <li>Navigating the AI Revolution: Opportunities & Challenges</li>
-                        <li>Purpose-Driven Innovation & Entrepreneurship</li>
-                        <li>Effective Technical Communication & Authoring</li>
-                        <li>Sustainable Maritime Practices & Blue Carbon Initiatives</li>
-                        <li>Leadership & Resilience in Modern Industry</li>
+                    <h4 class="text-2xl font-semibold mb-4 text-accent-main text-center">Popular Topics & Expertise:</h4>
+                    <ul class="list-disc list-inside text-text-secondary mb-8 pl-4 grid grid-cols-1 md:grid-cols-2 gap-y-3 text-lg">
+                        <li><strong class="text-text-primary">The Future of Maritime:</strong> AI, Blockchain & Digitalization</li>
+                        <li><strong class="text-text-primary">Career Pathways:</strong> In the Merchant Navy & Emerging Tech Fields</li>
+                        <li><strong class="text-text-primary">Startup Ecosystem:</strong> Building a Tech Startup From Idea to MVP</li>
+                        <li><strong class="text-text-primary">AI Revolution:</strong> Navigating Opportunities & Ethical Challenges</li>
+                        <li><strong class="text-text-primary">Purpose-Driven Innovation:</strong> Strategies for Sustainable Entrepreneurship</li>
+                        <li><strong class="text-text-primary">Effective Communication:</strong> Technical Content Creation & Public Speaking</li>
+                        <li><strong class="text-text-primary">Sustainable Maritime:</strong> Practices & Blue Carbon Initiatives</li>
+                        <li><strong class="text-text-primary">Leadership & Resilience:</strong> In Modern Industry & Seafaring</li>
                     </ul>
 
                     <p class="text-text-secondary leading-relaxed mb-6 text-lg text-center">
-                        Whether it's an interactive seminar for high school students or an in-depth webinar for industry professionals, I tailor content to engage your audience and deliver actionable insights.
+                        Whether it's an interactive seminar for high school students or an in-depth webinar for industry professionals, I tailor content to deeply engage your audience and deliver actionable insights that resonate.
                     </p>
 
                     <div class="text-center">
-                        <a href="#contact" class="btn-neon px-8 py-4 text-text-primary font-semibold rounded-xl text-lg">
-                            Book a Seminar/Webinar
+                        <a href="#contact" class="btn-futuristic text-lg">
+                            Request an Event Booking
                         </a>
                     </div>
                 </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section (New) -->
+        <section id="testimonials" class="py-20 bg-background-secondary">
+            <div class="container mx-auto px-4">
+                <h2 class="text-4xl font-bold text-center mb-16 neon-glow animate-on-scroll">What People Say About My Work</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                    <div class="glassmorphism p-8 rounded-2xl shadow-xl animate-on-scroll">
+                        <p class="text-text-secondary italic mb-6 leading-relaxed">
+                            "Yash's insights into maritime AI are truly visionary. His ability to bridge traditional seafaring with cutting-edge technology is unmatched. The 'SeaMate AI' concept alone shows his innovative spirit."
+                        </p>
+                        <div class="flex items-center">
+                            <img src="https://placehold.co/60x60/050B1A/A0B0D0?text=JD" alt="John Doe profile picture" class="w-14 h-14 rounded-full mr-4 border-2 border-accent-main">
+                            <div>
+                                <p class="text-text-primary font-semibold">John Doe</p>
+                                <p class="text-text-secondary text-sm">CEO, Maritime Tech Solutions</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="glassmorphism p-8 rounded-2xl shadow-xl animate-on-scroll">
+                        <p class="text-text-secondary italic mb-6 leading-relaxed">
+                            "The seminar Yash conducted for our students on blockchain in shipping was incredibly inspiring. He simplified complex topics and ignited a passion for innovation in our future maritime professionals."
+                        </p>
+                        <div class="flex items-center">
+                            <img src="https://placehold.co/60x60/050B1A/A0B0D0?text=JA" alt="Jane Appleseed profile picture" class="w-14 h-14 rounded-full mr-4 border-2 border-accent-main">
+                            <div>
+                                <p class="text-text-primary font-semibold">Jane Appleseed</p>
+                                <p class="text-text-secondary text-sm">Director, Global Maritime Academy</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action Section (New) -->
+        <section id="call-to-action" class="py-20 bg-background-primary text-center">
+            <div class="container mx-auto px-4 animate-on-scroll">
+                <h2 class="text-4xl font-bold mb-8 neon-glow">Ready to Innovate the Future of Maritime Together?</h2>
+                <p class="text-lg text-text-secondary max-w-3xl mx-auto mb-10">
+                    Whether you're looking to collaborate on a groundbreaking project, explore digital transformation, book a speaking engagement, or just want to connect, I'd love to hear from you. Let's build something impactful.
+                </p>
+                <a href="#contact" class="btn-futuristic text-xl">
+                    Get Started Now
+                </a>
             </div>
         </section>
 
@@ -945,48 +1178,48 @@
                 <h2 class="text-4xl font-bold text-center mb-16 neon-glow animate-on-scroll">Get In Touch</h2>
                 <div class="flex flex-col md:flex-row md:space-x-12 animate-on-scroll">
                     <div class="w-full md:w-1/2 glassmorphism p-8 rounded-2xl shadow-xl mb-10 md:mb-0">
-                        <h3 class="text-3xl font-semibold mb-6 text-accent-teal">Send a Message</h3>
+                        <h3 class="text-3xl font-semibold mb-6 text-accent-main">Send a Message</h3>
                         <form class="space-y-6">
                             <div>
                                 <label for="name" class="block text-text-secondary text-sm font-bold mb-2">Name</label>
-                                <input type="text" id="name" name="name" class="w-full p-3 rounded-lg bg-input-bg border border-border-glass focus:ring-2 focus:ring-accent-teal focus:outline-none text-text-primary placeholder-text-secondary" placeholder="Your Name" required>
+                                <input type="text" id="name" name="name" class="w-full p-3 rounded-lg bg-input-bg border border-border-light focus:ring-2 focus:ring-accent-main focus:outline-none text-text-primary placeholder-text-secondary" placeholder="Your Name" required>
                             </div>
                             <div>
                                 <label for="email" class="block text-text-secondary text-sm font-bold mb-2">Email</label>
-                                <input type="email" id="email" name="email" class="w-full p-3 rounded-lg bg-input-bg border border-border-glass focus:ring-2 focus:ring-accent-teal focus:outline-none text-text-primary placeholder-text-secondary" placeholder="your.email@example.com" required>
+                                <input type="email" id="email" name="email" class="w-full p-3 rounded-lg bg-input-bg border border-border-light focus:ring-2 focus:ring-accent-main focus:outline-none text-text-primary placeholder-text-secondary" placeholder="your.email@example.com" required>
                             </div>
                             <div>
                                 <label for="message" class="block text-text-secondary text-sm font-bold mb-2">Message</label>
-                                <textarea id="message" name="message" rows="6" class="w-full p-3 rounded-lg bg-input-bg border border-border-glass focus:ring-2 focus:ring-accent-teal focus:outline-none text-text-primary placeholder-text-secondary" placeholder="Your message here..." required></textarea>
+                                <textarea id="message" name="message" rows="6" class="w-full p-3 rounded-lg bg-input-bg border border-border-light focus:ring-2 focus:ring-accent-main focus:outline-none text-text-primary placeholder-text-secondary" placeholder="Your message here..." required></textarea>
                             </div>
-                            <button type="submit" class="btn-neon px-8 py-4 text-text-primary font-semibold rounded-xl text-lg w-full">
+                            <button type="submit" class="btn-futuristic w-full">
                                 Send Message
                             </button>
                         </form>
                     </div>
                     <div class="w-full md:w-1/2 glassmorphism p-8 rounded-2xl shadow-xl">
-                        <h3 class="text-3xl font-semibold mb-6 text-accent-teal">Connect & Collaborate</h3>
+                        <h3 class="text-3xl font-semibold mb-6 text-accent-main">Connect & Collaborate</h3>
                         <div class="space-y-6 text-lg">
                             <div class="flex items-center">
-                                <i class="fas fa-envelope text-accent-teal mr-4 text-2xl"></i>
+                                <i class="fas fa-envelope text-accent-main mr-4 text-2xl"></i>
                                 <a href="mailto:guptay050@gmail.com" class="text-text-secondary hover:text-text-primary transition-colors duration-300">guptay050@gmail.com</a>
                             </div>
                             <div class="flex items-center">
-                                <i class="fas fa-phone-alt text-accent-teal mr-4 text-2xl"></i>
+                                <i class="fas fa-phone-alt text-accent-main mr-4 text-2xl"></i>
                                 <span class="text-text-secondary">+91-9953073123</span>
                             </div>
                             <div class="flex items-center">
-                                <i class="fas fa-phone-alt text-accent-teal mr-4 text-2xl"></i>
+                                <i class="fas fa-phone-alt text-accent-main mr-4 text-2xl"></i>
                                 <span class="text-text-secondary">+91-8595557686</span>
                             </div>
                             <div class="flex space-x-6 mt-6">
-                                <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer" class="text-text-secondary hover:text-accent-teal text-3xl transition-colors duration-300" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                                <a href="https://twitter.com/yourprofile" target="_blank" rel="noopener noreferrer" class="text-text-secondary hover:text-accent-teal text-3xl transition-colors duration-300" title="Twitter"><i class="fab fa-twitter"></i></a>
-                                <a href="mailto:guptay050@gmail.com" class="text-text-secondary hover:text-accent-teal text-3xl transition-colors duration-300" title="Email"><i class="fas fa-envelope"></i></a>
+                                <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer" class="text-text-secondary hover:text-accent-main text-3xl transition-colors duration-300" aria-label="LinkedIn Profile"><i class="fab fa-linkedin"></i></a>
+                                <a href="https://twitter.com/yourprofile" target="_blank" rel="noopener noreferrer" class="text-text-secondary hover:text-accent-main text-3xl transition-colors duration-300" aria-label="Twitter Profile"><i class="fab fa-twitter"></i></a>
+                                <a href="mailto:guptay050@gmail.com" class="text-text-secondary hover:text-accent-main text-3xl transition-colors duration-300" aria-label="Send Email"><i class="fas fa-envelope"></i></a>
                             </div>
                         </div>
-                        <h4 class="text-2xl font-semibold mb-4 mt-10 text-accent-teal">Schedule a Meeting</h4>
-                        <div class="glassmorphism p-6 rounded-xl border border-border-glass">
+                        <h4 class="text-2xl font-semibold mb-4 mt-10 text-accent-main">Schedule a Meeting</h4>
+                        <div class="glassmorphism p-6 rounded-xl border border-border-light">
                             <p class="text-text-secondary mb-4">You can also schedule a direct meeting via Calendly:</p>
                             <!-- Calendly inline widget (replace with your actual embed code) -->
                             <div class="calendly-inline-widget" data-url="https://calendly.com/your-calendly-link" style="min-width:320px;height:630px;"></div>
@@ -1027,7 +1260,7 @@
                 <p class="text-sm mb-4">Subscribe to my newsletter for the latest insights on maritime innovation & AI.</p>
                 <form class="flex flex-col sm:flex-row gap-3">
                     <input type="email" placeholder="Your Email" class="p-3 rounded-lg bg-input-bg border border-border-glass focus:ring-2 focus:ring-accent-teal focus:outline-none text-text-primary placeholder-text-secondary flex-grow">
-                    <button type="submit" class="btn-neon px-6 py-3 text-text-primary font-semibold rounded-lg text-sm">
+                    <button type="submit" class="btn-futuristic px-6 py-3 text-text-primary font-semibold rounded-lg text-sm">
                         Subscribe
                     </button>
                 </form>
@@ -1285,26 +1518,27 @@
 
         // Project detail display logic
         function showProjectDetail(projectId) {
-            // Hide all project details first
-            document.querySelectorAll('.project-detail-section').forEach(detail => {
-                detail.classList.remove('active');
+            // Hide all project detail overlays
+            document.querySelectorAll('.project-detail-overlay').forEach(overlay => {
+                overlay.classList.remove('active');
             });
 
-            // Show the requested project detail
-            const projectDetail = document.getElementById(projectId + '-detail');
-            if (projectDetail) {
-                projectDetail.classList.add('active');
-                projectDetail.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            // Show the requested project detail overlay
+            const projectDetailOverlay = document.getElementById(projectId + '-detail-overlay');
+            if (projectDetailOverlay) {
+                projectDetailOverlay.classList.add('active');
+                // Optional: Scroll to the top of the modal if it's not already visible
+                projectDetailOverlay.querySelector('.project-detail-content').scrollTop = 0;
             }
         }
 
         function hideProjectDetail(projectId) {
-            const projectDetail = document.getElementById(projectId + '-detail');
-            if (projectDetail) {
-                projectDetail.classList.remove('active');
-                // Scroll back to the projects section if desired
-                document.getElementById('projects').scrollIntoView({ behavior: 'smooth', block: 'start' });
+            const projectDetailOverlay = document.getElementById(projectId + '-detail-overlay');
+            if (projectDetailOverlay) {
+                projectDetailOverlay.classList.remove('active');
             }
+            // Scroll back to the projects section
+            document.getElementById('projects').scrollIntoView({ behavior: 'smooth', block: 'start' });
         }
 
         // Set current year for copyright
